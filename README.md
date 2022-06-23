@@ -7,5 +7,5 @@
     </a>
 </div>
 <div id="counter" align="center">
-    <img src="https://komarev.com/ghpvc/?username=InFallen&style=flat-square&color=purple" alt=""/>
+    <img src="https://komarev.com/ghpvc/?username=infallen&style=flat-square&color=ff69b4" alt=""/>
 </div>
