@@ -9,7 +9,6 @@
 :root
 {
     --clr: #222327;
-    --font: #99a8fb;
 }
 body{
     display: flex;
@@ -23,7 +22,7 @@ body{
     position: relative;
     width: 700px;
     height: 70px;
-    background: linear-gradient(172deg, #11062B 10%, #8021c8 15%, #b12fce 73%, #820FA2 74%, #610C8E 83%, #400772 100%);
+    background: linear-gradient(180deg, #ADA0F8 25%, #6FC5E4 60%, #7788E4 80%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +73,7 @@ body{
 
 .navigation ul li a .text{
     position: absolute;
-    color: var(--font);
+    color: var(--clr);
     font-weight: 400;
     font-size: 0.75em;
     letter-spacing: 0.05em;
@@ -94,7 +93,7 @@ body{
     top: -50%;
     width: 70px;
     height: 70px;
-    background: linear-gradient(172deg, #7788E4 10%, #6FC5E4 41%, #ADA0F8 80%);
+    background: linear-gradient(180deg, #7788E4 10%, #6FC5E4 41%, #ADA0F8 70%);
     /* background: #29fd53; */
     border-radius: 50%;
     border: 6px solid var(--clr);
