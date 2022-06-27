@@ -9,6 +9,7 @@
 :root
 {
     --clr: #222327;
+    --font: #99a8fb;
 }
 body{
     display: flex;
@@ -22,7 +23,7 @@ body{
     position: relative;
     width: 700px;
     height: 70px;
-    background: #fff;
+    background: linear-gradient(172deg, #11062B 10%, #8021c8 15%, #b12fce 73%, #820FA2 74%, #610C8E 83%, #400772 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +61,10 @@ body{
     font-size: 1.5em;
     text-align: center;
     transition: 0.5s;
-    color: var(--clr)
+}
+
+.navigation ul li a .icon img {
+    width: 24px;
 }
 
 .navigation ul li.active a .icon{
@@ -70,7 +74,7 @@ body{
 
 .navigation ul li a .text{
     position: absolute;
-    color: var(--clr);
+    color: var(--font);
     font-weight: 400;
     font-size: 0.75em;
     letter-spacing: 0.05em;
@@ -90,7 +94,8 @@ body{
     top: -50%;
     width: 70px;
     height: 70px;
-    background: #29fd53;
+    background: linear-gradient(172deg, #7788E4 10%, #6FC5E4 41%, #ADA0F8 80%);
+    /* background: #29fd53; */
     border-radius: 50%;
     border: 6px solid var(--clr);
     transition: 0.5s;
@@ -138,4 +143,20 @@ body{
 
 .navigation ul li:nth-child(5).active ~ .indicator{
     transform: translateX(calc(70px * 4));
+}
+
+.navigation ul li:nth-child(6).active ~ .indicator{
+    transform: translateX(calc(70px * 5));
+}
+
+.navigation ul li:nth-child(7).active ~ .indicator{
+    transform: translateX(calc(70px * 6));
+}
+
+.navigation ul li:nth-child(8).active ~ .indicator{
+    transform: translateX(calc(70px * 7));
+}
+
+.navigation ul li:nth-child(9).active ~ .indicator{
+    transform: translateX(calc(70px * 8));
 }
