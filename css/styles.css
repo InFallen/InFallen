@@ -20,6 +20,11 @@ body{
     min-height: 100vh;
     background: var(--clr);
 }
+header{
+    position: fixed;
+    top: 0;
+}
+
 .navigation{
     position: relative;
     width: var(--width);
@@ -163,15 +168,17 @@ body{
 }
 
 main{
+    
     width: var(--width);
     min-height: 100vh;
-    margin-top: 1px;
+    margin-top: 121px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     background: linear-gradient(180deg, #7788E4 25%, #6FC5E4 60%, #ADA0F8 80%  );
     border-radius: 10px;
+    overflow: auto;
 }
 
 main h1 {
