@@ -176,11 +176,11 @@ main{
     border-radius: 10px;
 }
 
-main .part{
+main .part {
     display: none;
 }
 
-main .part .active{
+main .part.active {
     display: block;
 }
 
