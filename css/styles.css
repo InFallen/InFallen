@@ -8,8 +8,9 @@
 }
 :root
 {
-    --clr: #3c3a3d;
-    --width: 700px;
+    --clr: пше;
+    --width: 1000px;
+    --int-width: calc(var(--width) - 100px);
 }
 body{
     display: flex;
@@ -39,7 +40,7 @@ body{
 
 .navigation ul{
     display: flex;
-    width: 650px;
+    width: var(--int-width);
 }
 
 .navigation ul li{
@@ -184,7 +185,7 @@ main h1 {
     
 }
 main article{
-    width: 650px;
+    width: var(--int-width);
 }
 
 
@@ -247,7 +248,7 @@ footer{
 
 
 footer ul {
-    width: 650px;
+    width: var(--int-width);
     list-style: none;
     display: flex;
     justify-content: center;
