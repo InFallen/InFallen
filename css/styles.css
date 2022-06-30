@@ -31,6 +31,11 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    opacity: 0.5;
+}
+
+.navigation:hover{
+    opacity: 1;
 }
 
 .navigation ul{
@@ -176,6 +181,16 @@ main{
     border-radius: 10px;
 }
 
+main article{
+    width: 650px;
+}
+
+main article h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 main .part {
     display: none;
 }
@@ -183,6 +198,36 @@ main .part {
 main .part.active {
     display: block;
 }
+
+main .part ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+main .part ul li{
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+ main .part ul li a{
+    color: #551f68;
+    text-decoration: none;
+ }
+
+main .part ul li a:hover{
+    color: var(--clr);
+    text-decoration: underline;
+}
+
+main .part ul li a:active{
+    color: var(--clrt);
+    text-decoration: underline;
+    opacity: 0.3;
+}
+
 
 footer{
     display: flex;
