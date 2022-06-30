@@ -13,11 +13,11 @@
     --int-width: calc(var(--width) - 50px);
 }
 body{
+    min-width: var(--width);
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* margin-top: 50px; */
     min-height: 100vh;
     background: var(--clr);
     background-image: url(../img/back-pixel-city.png);
