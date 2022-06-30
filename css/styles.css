@@ -19,6 +19,9 @@ body{
     /* margin-top: 50px; */
     min-height: 100vh;
     background: var(--clr);
+    background-image: url(../img/back-pixel-city.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .navigation{
@@ -26,16 +29,12 @@ body{
     width: var(--width);
     height: 70px;
     margin-top: 50px;
-    background: linear-gradient(180deg, #ADA0F8 25%, #6FC5E4 60%, #7788E4 80%);
+    background: linear-gradient(180deg, transparent, #ADA0F8 25%, #6FC5E4 60%, #7788E4 80%);
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid var(--clr);
     border-radius: 10px;
-    opacity: 0.5;
-}
-
-.navigation:hover{
-    opacity: 1;
 }
 
 .navigation ul{
@@ -98,13 +97,13 @@ body{
 
 .indicator{
     position: absolute;
-    top: -50%;
+    top: -60%;
     width: 70px;
     height: 70px;
     background: linear-gradient(180deg, #7788E4 10%, #6FC5E4 41%, #ADA0F8 70%);
     /* background: #29fd53; */
     border-radius: 50%;
-    border: 6px solid var(--clr);
+    border: 3px solid var(--clr);
     transition: 0.5s;
 }
 
@@ -117,7 +116,7 @@ body{
     height: 20px;
     background: transparent;
     border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 var(--clr);
+    /* box-shadow: 1px -7px 0 0 var(--clr); */
 }
 
 .indicator::after{
@@ -129,7 +128,7 @@ body{
     height: 20px;
     background: transparent;
     border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 var(--clr);
+    /* box-shadow: -1px -7px 0 0 var(--clr); */
 }
 
 .navigation ul li:nth-child(1).active ~ .indicator{
@@ -171,7 +170,7 @@ body{
 main{
     
     width: var(--width);
-    min-height: 30vh;
+    min-height: 100vh;
     margin-top: 1px;
     display: flex;
     justify-content: flex-start;
@@ -180,12 +179,17 @@ main{
     background: linear-gradient(180deg, #7788E4 25%, #6FC5E4 60%, #ADA0F8 80%  );
     border-radius: 10px;
 }
-
+main h1 {
+    margin-top: 20px;
+    
+}
 main article{
     width: 650px;
 }
 
+
 main article h3{
+    margin-bottom: 20px;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,9 +241,10 @@ footer{
     width: var(--width);
     min-height: 100px;
     margin-top: 1px;
-    background: linear-gradient(180deg, #ADA0F8 25%, #6FC5E4 60%, #7788E4 80%);
+    background: linear-gradient(180deg, #ADA0F8 25%, #6FC5E4 60%, #7788E4 80%, transparent);
     border-radius: 10px;
 }
+
 
 footer ul {
     width: 650px;
