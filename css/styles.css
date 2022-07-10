@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *
 {
     margin: 0;
@@ -12,6 +13,7 @@
     --width: 1000px;
     --int-width: calc(var(--width) - 50px);
 }
+/* Общие стили для страницы */
 body{
     min-width: var(--width);
     display: flex;
@@ -25,6 +27,8 @@ body{
     background-attachment: fixed;
 }
 
+
+/* Стили для навигации */
 .navigation{
     position: relative;
     width: var(--width);
@@ -103,7 +107,6 @@ body{
     width: 70px;
     height: 70px;
     background: linear-gradient(180deg, #7788E4 10%, #6FC5E4 41%, #ADA0F8 70%);
-    /* background: #29fd53; */
     border-radius: 50%;
     border: 3px solid var(--clr);
     transition: 0.5s;
@@ -118,7 +121,6 @@ body{
     height: 20px;
     background: transparent;
     border-top-right-radius: 20px;
-    /* box-shadow: 1px -7px 0 0 var(--clr); */
 }
 
 .indicator::after{
@@ -130,7 +132,6 @@ body{
     height: 20px;
     background: transparent;
     border-top-left-radius: 20px;
-    /* box-shadow: -1px -7px 0 0 var(--clr); */
 }
 
 .navigation ul li:nth-child(1).active ~ .indicator{
@@ -170,7 +171,6 @@ body{
 }
 
 main{
-    
     width: var(--width);
     min-height: 100vh;
     margin-top: 1px;
@@ -181,22 +181,32 @@ main{
     background: linear-gradient(180deg, #7788E4 25%, #6FC5E4 60%, #ADA0F8 80%  );
     border-radius: 10px;
 }
+
 main h1 {
     margin-top: 20px;
     
 }
-main article{
-    width: var(--int-width);
-}
 
-
-main article h3{
+main h3{
+    margin-top: 10px;
     margin-bottom: 20px;  
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+main p {
+    width: var(--int-width);
+}
+
+main img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: var(--int-width);
+    border-radius: 20px;
+}
+
+/* Стили для переключения между вкладками */
 main .part {
     display: none;
 }
@@ -205,36 +215,46 @@ main .part.active {
     display: block;
 }
 
-main .part ul {
+/* Стили для списков в блоке main */
+main ul {
+    width: var(--int-width);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
     list-style: none;
 }
 
-main .part ul li{
+main ul li{
     color: black;
     font-size: 16px;
     line-height: 24px;
 }
 
- main .part ul li a{
-    color: #551f68;
+/* Стили для ссылок в блоке main */
+ main a{
+    color: #8adbdc;
     text-decoration: none;
  }
 
-main .part ul li a:hover{
+main a:hover{
     color: var(--clr);
     text-decoration: underline;
 }
 
-main .part ul li a:active{
+main a:active{
     color: var(--clrt);
     text-decoration: underline;
     opacity: 0.3;
 }
 
+main a:visited{
+    color: #551f68;
+}
 
+
+
+/* Стили для подвала */
 footer{
     display: flex;
     flex-direction: column;
@@ -260,6 +280,26 @@ footer ul {
 footer ul li img{
     width: 30px;
 }
+
+
+/* Раздел в разработке */
+
+.developing{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.developing:before{
+    content:"Раздел в разработке";
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 400;
+}
+
+
 
 
 
