@@ -186,7 +186,7 @@ body {
     transform: translateX(calc(70px * 10));
 }
 
-/* Стили для осного контента */
+/* Стили для основного контента */
 main {
     width: var(--width);
     min-height: 100vh;
@@ -267,6 +267,10 @@ main ul li {
     line-height: 24px;
 }
 
+.list-extensions li {
+    margin-bottom: 20px;
+}
+
 /* Стили для ссылок в блоке main */
 main a {
     color: #8adbdc;
@@ -279,7 +283,7 @@ main a:hover {
 }
 
 main a:active {
-    color: var(--clrt);
+    color: var(--clr);
     text-decoration: underline;
     opacity: 0.3;
 }
