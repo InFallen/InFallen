@@ -85,7 +85,86 @@
             После прохождения проверки мы переходим к установке и увидим экран с выбором языка:
             <img src="../../img/centos/centos_install_6.png" alt="centos_install_language_screen">
             Здесь нажимаем кнопку <i>Continue</i> и переходим к следующему экрану:
-            <img src="../../img/centos/" </p>
+            <img src="../../img/centos/centos_install_7.png" alt="centos_install_settings_screen">
+            Данный экран состоит из нескольких разделов:<br>
+        </p>
+        <dl>
+            <span class="head-part">Localization</span>
+            <img src="../../img/centos/centos_install_8.png" alt="centos_install_settings_loc">
+            В данном разделе, ничего изменять не нужно, но описание каждого пункта приведу ниже.
+            <dt>Date & Time</dt>
+            <dd>
+                Настройка времени и временной зоны.
+                <img src="../../img/centos/centos_install_8_1.png" alt="centos_install_date_and_time">
+            </dd>
+            <dt>Keyboard</dt>
+            <dd>
+                Выбор раскладки клавиатуры.
+                <img src="../../img/centos/centos_install_8_2.png" alt="centos_install_keyboard">
+            </dd>
+            <dt>Language support</dt>
+            <dd>
+                Выбор поддерживаемого языка системы.
+                <img src="../../img/centos/centos_install_8_3.png" alt="centos_install_language">
+            </dd>
+        </dl>
+        <dl>
+            <span class="head-part">Software</span>
+            <img src="../../img/centos/centos_install_9.png" alt="centos_install_settings_soft">
+            В данном разделе, также ничего изменять не нужно, описание ниже.
+            <dt>Installation source</dt>
+            <dd>
+                Выбор источника установочных файлов.
+                <img src="../../img/centos/centos_install_9_1.png" alt="centos_install_install_source">
+            </dd>
+            <dt>Software selection</dt>
+            <dd>
+                Выбор предустановленного программного обеспечения, так как у нас минимальный образ, то выбора нет.
+                <img src="../../img/centos/centos_install_9_2.png" alt="centos_install_soft_select">
+            </dd>
+        </dl>
+        <dl>
+            <span class="head-part">System</span>
+            <img src="../../img/centos/centos_install_10.png" alt="centos_install_settings_system">
+            В данном разделе, нам нужно будет настроить разделы диска, ну и соответственно - описание ниже.
+            <dt>Installation destination</dt>
+            <dd>
+                Настройка дисковой подсистемы. Нам нужно зайти сюда и сразу нажать клавишу <i>Done</i> .
+                <img src="../../img/centos/centos_install_10_1.png" alt="centos_install_install_source">
+            </dd>
+            <dt>KDump</dt>
+            <dd>
+                Настройка механизма создания дампа ядра, который в случае сбоя системы собирает информацию, которая
+                может оказаться бесценной для определения причины сбоя.
+                <img src="../../img/centos/centos_install_10_2.png" alt="centos_install_kdump">
+            </dd>
+            <dt>Network & Hostname</dt>
+            <dd>
+                Настройка сети и имени системы.
+                <img src="../../img/centos/centos_install_10_3.png" alt="centos_install_network">
+            </dd>
+            <dt>Security policy</dt>
+            <dd>
+                Настройка политик безопасности, так как у нас минимальный образ, тут нет никаких настроек.
+                <img src="../../img/centos/centos_install_10_4.png" alt="centos_install_soft_select">
+            </dd>
+        </dl>
+        <p>
+            После настройки дисковой подсистемы, нужно нажать на кнопку <i>Begin Installation</i> для начала установки.
+            <img src="../../img/centos/centos_install_11.png" alt="centos_install_begin_install">
+            Установка началась и вы попали на экран, где требуется нажать на кнопку <i>root password</i>, чтобы задать
+            пароль для пользователя <b>root</b>.
+            <img src="../../img/centos/centos_install_12.png" alt="centos_install_set_pass">
+            На следующем экран, вам нужно заполнить два поля паролем, и нажать на кнопку <i>Done</i>.
+            <img src="../../img/centos/centos_install_13.png" alt="centos_install_root_pass">
+            После того как, мы задали пароль, ожидаем окончания установки.
+            <img src="../../img/centos/centos_install_14.png" alt="centos_install_final_install">
+            Когда установка закончится, вам потребуется нажать на кнопку <i>Reboot</i> для перезагрузки системы:
+            <img src="../../img/centos/centos_install_15.png" alt="centos_install_reboot">
+            После перезагрузки появится экран ввода логина и пароля:
+            <img src="../../img/centos/centos_install_16.png" alt="centos_install_login">
+            На этом установка CentOS 7 закончена.
+        </p>
     </main>
     <footer>
         <h4>Социальные сети</h4>

@@ -216,6 +216,12 @@ main p {
     width: var(--int-width);
 }
 
+main .head-part {
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
 main img {
     margin-top: 10px;
     margin-bottom: 10px;
