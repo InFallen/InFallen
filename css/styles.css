@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-:root
-{
+
+:root {
     --clr: #3c3a3d;
     --width: 1000px;
     --int-width: calc(var(--width) - 50px);
 }
+
 /* Общие стили для страницы */
-body{
+body {
     min-width: var(--width);
     display: flex;
     justify-content: center;
@@ -29,7 +30,7 @@ body{
 
 
 /* Стили для навигации */
-.navigation{
+.navigation {
     position: relative;
     width: var(--width);
     height: 70px;
@@ -43,12 +44,12 @@ body{
 
 }
 
-.navigation ul{
+.navigation ul {
     display: flex;
     width: var(--int-width);
 }
 
-.navigation ul li{
+.navigation ul li {
     position: relative;
     list-style: none;
     width: 70px;
@@ -56,7 +57,7 @@ body{
     z-index: 1;
 }
 
-.navigation ul li a{
+.navigation ul li a {
     position: relative;
     display: flex;
     justify-content: center;
@@ -69,7 +70,7 @@ body{
     text-decoration: none;
 }
 
-.navigation ul li a .icon{
+.navigation ul li a .icon {
     position: relative;
     display: block;
     line-height: 75px;
@@ -87,12 +88,12 @@ body{
     width: 40px;
 }
 
-.navigation ul li.active a .icon{
+.navigation ul li.active a .icon {
     transform: translateY(-32px);
 }
 
 
-.navigation ul li a .text{
+.navigation ul li a .text {
     position: absolute;
     color: var(--clr);
     font-weight: 400;
@@ -103,12 +104,12 @@ body{
     transform: translateY(20px);
 }
 
-.navigation ul li.active a .text{
+.navigation ul li.active a .text {
     opacity: 1;
     transform: translateY(10px);
 }
 
-.indicator{
+.indicator {
     position: absolute;
     top: -60%;
     width: 70px;
@@ -119,7 +120,7 @@ body{
     transition: 0.5s;
 }
 
-.indicator::before{
+.indicator::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -130,7 +131,7 @@ body{
     border-top-right-radius: 20px;
 }
 
-.indicator::after{
+.indicator::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -141,52 +142,52 @@ body{
     border-top-left-radius: 20px;
 }
 
-.navigation ul li:nth-child(1).active ~ .indicator{
+.navigation ul li:nth-child(1).active~.indicator {
     transform: translateX(calc(70px * 0));
 }
 
-.navigation ul li:nth-child(2).active ~ .indicator{
+.navigation ul li:nth-child(2).active~.indicator {
     transform: translateX(calc(70px * 1));
 }
 
-.navigation ul li:nth-child(3).active ~ .indicator{
+.navigation ul li:nth-child(3).active~.indicator {
     transform: translateX(calc(70px * 2));
 }
 
-.navigation ul li:nth-child(4).active ~ .indicator{
+.navigation ul li:nth-child(4).active~.indicator {
     transform: translateX(calc(70px * 3));
 }
 
-.navigation ul li:nth-child(5).active ~ .indicator{
+.navigation ul li:nth-child(5).active~.indicator {
     transform: translateX(calc(70px * 4));
 }
 
-.navigation ul li:nth-child(6).active ~ .indicator{
+.navigation ul li:nth-child(6).active~.indicator {
     transform: translateX(calc(70px * 5));
 }
 
-.navigation ul li:nth-child(7).active ~ .indicator{
+.navigation ul li:nth-child(7).active~.indicator {
     transform: translateX(calc(70px * 6));
 }
 
-.navigation ul li:nth-child(8).active ~ .indicator{
+.navigation ul li:nth-child(8).active~.indicator {
     transform: translateX(calc(70px * 7));
 }
 
-.navigation ul li:nth-child(9).active ~ .indicator{
+.navigation ul li:nth-child(9).active~.indicator {
     transform: translateX(calc(70px * 8));
 }
 
-.navigation ul li:nth-child(10).active ~ .indicator{
+.navigation ul li:nth-child(10).active~.indicator {
     transform: translateX(calc(70px * 9));
 }
 
-.navigation ul li:nth-child(11).active ~ .indicator{
+.navigation ul li:nth-child(11).active~.indicator {
     transform: translateX(calc(70px * 10));
 }
 
 /* Стили для осного контента */
-main{
+main {
     width: var(--width);
     min-height: 100vh;
     margin-top: 1px;
@@ -194,18 +195,18 @@ main{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(180deg, #7788E4 25%, #6FC5E4 60%, #ADA0F8 80%  );
+    background: linear-gradient(180deg, #7788E4 25%, #6FC5E4 60%, #ADA0F8 80%);
     border-radius: 10px;
 }
 
 main h1 {
     margin-top: 20px;
-    
+
 }
 
-main h3{
+main h3 {
     margin-top: 10px;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,7 +216,7 @@ main p {
     width: var(--int-width);
 }
 
-main img{
+main img {
     margin-top: 10px;
     margin-bottom: 10px;
     width: var(--int-width);
@@ -230,7 +231,7 @@ main dl {
     align-items: flex-start;
 }
 
-dt{
+dt {
     font-weight: bold;
 }
 
@@ -254,37 +255,37 @@ main ul {
     list-style: none;
 }
 
-main ul li{
+main ul li {
     color: black;
     font-size: 16px;
     line-height: 24px;
 }
 
 /* Стили для ссылок в блоке main */
- main a{
+main a {
     color: #8adbdc;
     text-decoration: none;
- }
+}
 
-main a:hover{
+main a:hover {
     color: var(--clr);
     text-decoration: underline;
 }
 
-main a:active{
+main a:active {
     color: var(--clrt);
     text-decoration: underline;
     opacity: 0.3;
 }
 
-main a:visited{
+main a:visited {
     color: #551f68;
 }
 
 
 
 /* Стили для подвала */
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -306,22 +307,22 @@ footer ul {
     height: 50px;
 }
 
-footer ul li img{
+footer ul li img {
     width: 30px;
 }
 
 
 /* Раздел в разработке */
 
-.developing{
+.developing {
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.developing:before{
-    content:"Раздел в разработке";
+.developing:before {
+    content: "Раздел в разработке";
     font-family: 'Lobster', cursive;
     font-size: 50px;
     line-height: 70px;
@@ -331,24 +332,21 @@ footer ul li img{
 /* Кнопка наверх */
 
 .topbutton {
-    width:100px;
-    border:2px solid #ccc;
-    background:#f7f7f7;
-    text-align:center;
-    padding:10px;
-    position:fixed;
-    bottom:50px;
-    right:50px;
-    cursor:pointer;
-    color:#333;
-    font-family:verdana;
-    font-size:12px;
+    width: 100px;
+    border: 2px solid #ccc;
+    background: #f7f7f7;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    color: #333;
+    font-family: verdana;
+    font-size: 12px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
     scroll-behavior: smooth;
 }
-
-
-

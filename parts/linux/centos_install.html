@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,44 @@
     <link href="../../css/styles.css" rel="stylesheet">
     <title>Установка CentOS 7</title>
 </head>
+
 <body>
     <header>
-    <div class="navigation return">
+        <div class="navigation return">
+            <ul>
+                <li class="list active">
+                    <a href="../../index.html#home">
+                        <span class="icon">
+                            <img src="../../img/icon-return.png" alt="icon-return">
+                        </span>
+                        <span class="text">Назад</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1>Установка CentOS 7</h1>
+
         <ul>
-            <li class="list active">
-                <a href="../../index.html#home">
-                    <span class="icon">
-                        <img src="../../img/icon-return.png" alt="icon-return">
-                    </span>
-                    <span class="text">Назад</span>
-                </a>
+            <li>
+                <a href="#download">1. Скачивание дистрибутива.</a>
             </li>
-            <div class="indicator"></div>
         </ul>
-    </div>
-</header>
-<main>
-    <h1>Установка CentOS 7</h1>
-    
-    <ul>
-        <li>
-            <a href="#download">1. Скачивание дистрибутива.</a>
-        </li>
-    </ul>
-    <h2 id="download">Скачивание дистрибутива</h2>
-    <p>
-        Заходим на официальный сайт по <a href="https://www.centos.org/">ссылке</a> и нажимаем <i>Download</i> :
-        <img src="../../img/centos_install_1.png" alt="centos_site">
-        На открывшейся странице выбираем вкладку <i>CentOS Linux</i> и в зависимости от архитектуры вашего компьютера или сервера версию дистрибутива:
-        <img src="../../img/centos_install_2.png" alt="centos_site_distr">
-        Выбрав версию вы попадёте на страницу со списком зеркал, откуда можно скачать дистрибутив:
-        <img src="../../img/centos_install_3.png" alt="centos_site_mirrors">
-        Перейдя по одной из ссылок вы увидите список файлов доступных для скачивания(образы и торрент файлы):
-        <img src="../../img/centos_install_4.png" alt="centos_site_download">
-    </p>
-            <dl>
+        <h2 id="download">Скачивание дистрибутива</h2>
+        <p>
+            Заходим на официальный сайт по <a href="https://www.centos.org/">ссылке</a> и нажимаем <i>Download</i> :
+            <img src="../../img/centos_install_1.png" alt="centos_site">
+            На открывшейся странице выбираем вкладку <i>CentOS Linux</i> и в зависимости от архитектуры вашего
+            компьютера или сервера версию дистрибутива:
+            <img src="../../img/centos_install_2.png" alt="centos_site_distr">
+            Выбрав версию вы попадёте на страницу со списком зеркал, откуда можно скачать дистрибутив:
+            <img src="../../img/centos_install_3.png" alt="centos_site_mirrors">
+            Перейдя по одной из ссылок вы увидите список файлов доступных для скачивания(образы и торрент файлы):
+            <img src="../../img/centos_install_4.png" alt="centos_site_download">
+        </p>
+        <dl>
             <dt>0_README.txt</dt>
             <dd>Файл с описание представленных образов и инструкцией по их использованию.</dd>
             <dt>CentOS-7-x86_64-DVD-2009.iso</dt>
@@ -54,38 +57,39 @@
                 полезен, если у вас есть локальное зеркало пакетов CentOS.</dd>
             <dt>CentOS-7-x86_64-Everything-2009.iso</dt>
             <dd>Этот образ содержит полный набор пакетов для CentOS Linux 7. Его можно
-                использовать для установки или заполнения локального зеркала. Для этого образа требуется флешка на 16 ГБ,
+                использовать для установки или заполнения локального зеркала. Для этого образа требуется флешка на 16
+                ГБ,
                 так как он слишком большшой для записи на DVD.</dd>
             <dt>CentOS-7-x86_64-Minimal-2009.iso</dt>
             <dd>Целью этого образа является установка очень простой системы CentOS Linux 7 с
                 минимум пакетов, необходимых для работы системы. Все остальное нужно установить с помощью yum. Набор
                 пакетов, устанавливаемых этим образом, совпадает с установленным при выборе
                 установ под названием «Минимальный» из полного образа DVD.</dd>
-            <dt>sha256sum.txt  </dt>
+            <dt>sha256sum.txt </dt>
             <dd>Хэш суммы файлов с образами.</dd>
-            </dl>
-        
+        </dl>
+
         <p>
-        
-        Дальнейшее описание установки будет идти с использованием образа CentOS-7-x86_64-Minimal-2009.iso.
-    </p>
-    
-</main>
-<footer>
-    <h4>Социальные сети</h4>
-    <ul>
-        <li>
-            <a href="https://vk.com/infallen">
-                <img src="../../img/icon-vk.png" alt="icon-vk">
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/InFallen">
-                <img src="../../img/icon-github.png" alt="icon-github">
-            </a>
-        </li>
-    </ul>
-</footer>
+            Дальнейшее описание установки будет идти с использованием образа CentOS-7-x86_64-Minimal-2009.iso.
+        </p>
+
+    </main>
+    <footer>
+        <h4>Социальные сети</h4>
+        <ul>
+            <li>
+                <a href="https://vk.com/infallen">
+                    <img src="../../img/icon-vk.png" alt="icon-vk">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/InFallen">
+                    <img src="../../img/icon-github.png" alt="icon-github">
+                </a>
+            </li>
+        </ul>
+    </footer>
     <script src="../../js/scripts.js"></script>
 </body>
+
 </html>
