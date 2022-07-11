@@ -172,6 +172,15 @@ body{
     transform: translateX(calc(70px * 8));
 }
 
+.navigation ul li:nth-child(10).active ~ .indicator{
+    transform: translateX(calc(70px * 9));
+}
+
+.navigation ul li:nth-child(11).active ~ .indicator{
+    transform: translateX(calc(70px * 10));
+}
+
+/* Стили для осного контента */
 main{
     width: var(--width);
     min-height: 100vh;
