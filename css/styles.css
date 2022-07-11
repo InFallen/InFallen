@@ -222,6 +222,19 @@ main img{
     border-radius: 20px;
 }
 
+main dl {
+    width: var(--int-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+dt{
+    font-weight: bold;
+}
+
+
 /* Стили для переключения между вкладками */
 main .part {
     display: none;
