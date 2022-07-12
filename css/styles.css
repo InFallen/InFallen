@@ -268,7 +268,18 @@ main ul li {
 }
 
 .list-extensions li {
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.extension-benefits {
+    margin-left: 20px;
+    list-style: disc;
+    list-style-position: outside;
+}
+
+.extension-benefits li {
+    margin: 0;
 }
 
 /* Стили для ссылок в блоке main */
