@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/styles.css" rel="stylesheet">
+    <title>Настройка сети CentOS 7</title>
+</head>
+
+<body>
+    <header>
+        <div class="navigation return">
+            <ul>
+                <li class="list active">
+                    <a href="../../index.html#home">
+                        <span class="icon">
+                            <img src="../../img/icon-return.png" alt="icon-return">
+                        </span>
+                        <span class="text">Назад</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1>Настройка сети CentOS 7</h1>
+        <ul>
+            <li>
+                <a href="#set-lan-dur-install">1. Настройка во время установки.</a>
+            </li>
+        </ul>
+        <h2 id="set-lan-dur-install">Настройка во время установки</h2>
+        <p>
+            Первый и самый простой вариант настройки сети - это настройка во время установки.
+            На экране настроек нам нужно найти раздел <b>System</b> и нажать на <i>Network & Host name</i>.
+            <img src="../../img/centos/centos_set_lan_01.png" alt="centos_install_settings_system">
+            На экране настроек сети, есть несколько параметров:
+            <img src="../../img/centos/centos_set_lan_02.png" alt="centos_install_set_lan">
+        </p>
+        <ul>
+            <li>
+                1. Список сетевых интерфейсов.
+            </li>
+            <li>
+                2. Информация об выбранном интерфейсе и кнопка включения-выключения.
+            </li>
+            <li>
+                3. Настройки выбранного интерфейса.
+            </li>
+            <li>
+                4. Название хоста.
+            </li>
+        </ul>
+        <p>
+            После нажатия на <i>кнопку включения(2)</i>, выбранный интерфейс станет активным и получит настройки по
+            dhcp.
+            <img src="../../img/centos/centos_set_lan_03.png" src="centos_install_set_lan_turn_on">
+        </p>
+        <p>
+            Если вам нужно сменить настройки, то вы можете нажать на кнопку <i>Configure(3)</i>.
+            Попав в окно дополнительных настроек, вы сможете изменить <b>имя интерфейса</b>,
+            выбрать режим настроек <b>Manual</b>, задать <b>ip-адрес</b>, задать <b>dns-серверы</b>.
+            И после выполнения всех настроек нажать <i>Save</i>.
+            <img src="../../img/centos/centos_set_lan_04.png" alt="centos_install_set_lan_config">
+        </p>
+        <p>
+            Для изменения имени системы вводите в поле <b>Host name</b> новое имя и нажимаете кнопку <i>Apply</i>.
+            <img src="../../img/centos/centos_set_lan_05.png" alt="centos_install_set_lan_hostname">
+            Для продолжения других настроек нажимаем на кнопку <i>Done</i>.
+            На этом настройки сети во время установки закончены.
+        </p>
+    </main>
+    <footer>
+        <h4>Социальные сети</h4>
+        <ul>
+            <li>
+                <a href=" https://vk.com/infallen">
+                    <img src="../../img/icon-vk.png" alt="icon-vk">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/InFallen">
+                    <img src="../../img/icon-github.png" alt="icon-github">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
+    <script src="../../js/scripts.js"></script>
+</body>
+
+</html>
