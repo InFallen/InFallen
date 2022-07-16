@@ -204,6 +204,11 @@ main h1 {
 
 }
 
+main h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 main h3 {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -246,6 +251,14 @@ dt {
     margin-bottom: 10px;
     padding: 5px;
     background-color: #be7788;
+    border-radius: 5px;
+}
+
+.example {
+    margin: 10px;
+    padding: 10px;
+    background-color: lightgrey;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
