@@ -1,5 +1,3 @@
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+# _config.yml
+
+title: "Jekyll Actions Demo"
