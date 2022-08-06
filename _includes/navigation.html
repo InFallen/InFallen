@@ -1,0 +1,23 @@
+<div class="chapters">
+    <ul>
+        <li class="list {% if page.url=='/' %} active {% endif %}">
+            <a href="/">
+                <span class="icon">
+                    <img src="/assets/img/icon-home.png" alt="icon-home">
+                </span>
+                <span class="text">Home</span>
+            </a>
+        </li>
+        {% for chapter in site.chapters %}
+        <li class="list {% if page.url == chapter.url %} active {% endif %}">
+            <a href="{{chapter.url}}">
+                <span class="icon">
+                    <img src="/assets/img/icon-{{chapter.short_name}}.png" alt="icon-{{chapter.short_name}}">
+                </span>
+                <span class="text">{{chapter.short_name}}</span>
+            </a>
+        </li>
+        {% endfor %}
+        <div class="indicator"></div>
+    </ul>
+</div>

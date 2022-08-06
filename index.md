@@ -7,3 +7,5 @@ Welcome to My Home Page
 
 - Начальная дата - {{ date }}
 - С временным фильтром - {{ date | timeago }}
+
+Author: {{ page.author }}
