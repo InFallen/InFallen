@@ -7,6 +7,10 @@ encoding: "utf-8"
 collections:
   chapters:
     output: true
+  socials:
+    output: true
+  resources:
+    output: true
 
 
 # Настройка макетов по умолчанию
@@ -23,3 +27,7 @@ defaults:
     values:
       layout: "default"                       # Используемый макет по-умолчанию
       author: "Артем 'InFallen' Нагорный"     # Автор страницы по-умолчанию
+
+
+kramdown:
+  hard_wrap: true

@@ -1,0 +1,33 @@
+<footer>
+    <div>
+        <div class="socials">
+            <h4>Социальные сети</h4>
+            <ul>
+
+                {% for social in site.socials %}
+                <li>
+                    <a href="{{social.link}}">
+                        <img src="{{social.image}}" alt="icon {{social.name}}">
+                    </a>
+                </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+        <div class="resources">
+            <h4>Используемые ресурсы</h4>
+            <ul>
+                {% for resource in site.resources %}
+                <li>
+                    <a href="{{resource.link}}">
+                        <img src="{{resource.image}}" alt="icon {{resource.name}}">
+                    </a> - {{resource.description}}.
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <span>&copy; {{ site.time | date: '%Y' }} <a href="/about.html" class="black">{{page.author}}</a></span>
+    </div>
+</footer>

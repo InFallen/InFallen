@@ -1,6 +1,5 @@
 ---
 chapter: vscode
-layout: post
 title: Первопост
 ---
 

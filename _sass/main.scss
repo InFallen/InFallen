@@ -19,12 +19,14 @@
 
 body{
     min-width: var(--width);
-    
+    min-height: 100vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
 
     background: url(/assets/img/back-pixel-city.png) no-repeat fixed;
+    
 }
 
 
@@ -34,7 +36,7 @@ nav {
     height: 60px;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding: 5px;
+    padding: 10px;
 
     display: flex;
     align-items: center;
@@ -116,7 +118,7 @@ nav .nav-link a img:active {
     padding: 0;
 
     background-color: rgba(255, 255, 255, 0.5);
-    border: 2px solid aqua;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .posts li a {
@@ -134,8 +136,73 @@ nav .nav-link a img:active {
     color: black;
 }
 
+.posts li:hover{
+    transform: translateX(5px) translateY(5px);
+    box-shadow: none;
+}
+
 // Стили основного контента
 main{
+    
     width: var(--width);
+    padding: 10px;
+
+    background-color: rgba(190, 190, 190, 0.7);
+    
+}
+
+// Футер
+footer {
+    width: var(--width);
+    margin-top: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(190, 190, 190, 0.7);
+    
+}
+
+footer div{
+    width: 100%;
+    display: flex;
+}
+
+footer .socials,
+footer .resources {
+    width: 50%;
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    
+
+    list-style: none;
+}
+
+footer .resources{
+    margin-right: 0;
+}
+
+footer .resources li {
+    display: flex;
+    align-items: center;
+}
+
+footer ul {
+    margin-top: 5px;
+    
+    display: flex;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a img{
+    width: 30px;
 }
 

@@ -1,6 +1,5 @@
 ---
 chapter: linux
-layout: post
 title: Установка CentOS
 ---
 
