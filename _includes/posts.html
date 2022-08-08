@@ -1,0 +1,26 @@
+<ul class="posts">
+    {% if page.short_name == 'home' %}
+    {% assign filtered_posts = site.posts %}
+    {% else %}
+    {% assign filtered_posts = site.posts | where:'chapter', page.short_name %}
+    {% endif %}
+    {% for post in filtered_posts %}
+    <li>
+        <a href="{{post.url}}">
+            <span class="icon">
+
+                {% for chapter in site.chapters %}
+
+                {% if post.chapter == chapter.short_name %}
+                <img src="{{chapter.image}}" alt="icon {{chapter.short_name}}">
+                {% endif %}
+
+                {% endfor %}
+
+            </span>
+            <h2>{{post.title}}</h2>
+            {{post.excerpt}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>

@@ -11,20 +11,15 @@ collections:
 
 # Настройка макетов по умолчанию
 defaults:
-  - 
-    scope:
-      path: ""                                # Пустая строка означает все файлы в проекте
-    values:
-      layout: "default"                       # Используемый макет по-умолчанию
-      author: "Артем 'InFallen' Нагорный"     # Автор страницы по-умолчанию
   -
     scope:
       path: ""
       type: "chapters"
     values:
       layout: "chapters"
-      author: "Артем 'InFallen' Нагорный"
-
-
-
-title: "Jekyll Actions Demo"
+  - 
+    scope:
+      path: ""                                # Пустая строка означает все файлы в проекте
+    values:
+      layout: "default"                       # Используемый макет по-умолчанию
+      author: "Артем 'InFallen' Нагорный"     # Автор страницы по-умолчанию
