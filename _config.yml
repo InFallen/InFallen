@@ -27,6 +27,7 @@ defaults:
     values:
       layout: "default"                       # Используемый макет по-умолчанию
       author: "Артем 'InFallen' Нагорный"     # Автор страницы по-умолчанию
+      sitename: "InFallen.space"
 
 
 kramdown:

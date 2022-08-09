@@ -28,7 +28,7 @@ body{
     background-image: url(/assets/img/back-pixel-city.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position-x: center;
 }
 
 
@@ -169,12 +169,14 @@ footer {
 }
 
 footer div{
+    position: relative;
     width: 100%;
     display: flex;
 }
 
 footer .socials,
 footer .resources {
+    position: relative;
     width: 50%;
     margin-right: 10px;
 
@@ -208,3 +210,7 @@ footer ul li a img{
     width: 30px;
 }
 
+footer .copyright{
+    display: flex;
+    justify-content: center;
+}
