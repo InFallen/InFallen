@@ -153,6 +153,74 @@ main{
     
 }
 
+main .step{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+main .step a {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.7)
+}
+
+main .step a:hover{
+    text-decoration: underline;
+    color:rgba(0, 0, 0, 1)
+}
+
+main .step a:active{
+    color:rgba(0, 0, 0, 0.2)
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.prev-next-button{
+    margin: 10px;
+    height: 50px;
+
+    display:block;
+    
+}
+
+.prev-next-button .prev{
+    float: left;
+}
+
+.prev-next-button .next{
+    float: right;
+}
+
+.button {
+    width: 100px;
+    height: 46px;
+
+    display: block;
+
+    border: 2px dashed black;
+}
+
+.prev a,
+.next a{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev a img,
+.next a img{
+    width: 25px;
+}
+
+.prev a img{
+    transform: rotate(180deg);
+}
+
+
 // Футер
 footer {
     width: var(--width);

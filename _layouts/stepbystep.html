@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{{content}}
+
+
+{% if page.url != "/jekyll/stepbystep.html" %}
+
+{% capture the_collection %}{{page.collection}}{% endcapture %}
+{% if page.collection %}
+{% assign document = site[the_collection] | sort: "order" %}
+{% endif %}
+
+{% for links in document %}
+{% if links.title == page.title %}
+{% unless forloop.first %}
+{% assign prevurl = prev.url %}
+{% endunless %}
+{% unless forloop.last %}
+{% assign next = document[forloop.index] %}
+{% assign nexturl = next.url %}
+{% endunless %}
+{% endif %}
+{% assign prev = links %}
+{% endfor %}
+
+
+<div class="prev-next-button">
+    {% if prevurl %}
+    <span class="button prev">
+        <a href="{{prevurl}}">
+            <img src="/assets/img/arrow.png">
+        </a>
+    </span>
+    {% endif %}
+    {% if nexturl %}
+    <span class="button next">
+        <a href="{{nexturl}}">
+            <img src="/assets/img/arrow.png">
+        </a>
+    </span>
+    {% endif %}
+</div>
+{% endif %}
+
+
+
+{% assign sorted_pages = site.jekyllstepbystep | sort: "order" %}
+{% for item in sorted_pages %}
+<div class="step">
+    <a href="{{item.url}}">{{item.header}}</a>
+</div>
+{% endfor %}

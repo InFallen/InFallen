@@ -7,10 +7,14 @@ encoding: "utf-8"
 collections:
   chapters:
     output: true
+    permalink: /:name
   socials:
     output: true
   resources:
     output: true
+  jekyllstepbystep:
+    output: true
+    permalink: /jekyll/stepbystep/:name
 
 
 # Настройка макетов по умолчанию
@@ -18,9 +22,22 @@ defaults:
   -
     scope:
       path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
       type: "chapters"
     values:
-      layout: "chapters"
+      layout: "chapter"
+  -
+    scope:
+      path: ""
+      type: "jekyllstepbystep"
+    values:
+      layout: "stepbystep"
+  -
   - 
     scope:
       path: ""                                # Пустая строка означает все файлы в проекте
@@ -31,4 +48,4 @@ defaults:
 
 
 kramdown:
-  hard_wrap: true
+  gfm_quirks: [paragraph_end]
