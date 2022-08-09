@@ -153,27 +153,28 @@ main{
     
 }
 
-main .step{
-    margin-top: 5px;
-    margin-bottom: 5px;
+p {
+    margin-bottom: 10px;
 }
 
-main .step a {
+main a {
     text-decoration: none;
     color:rgba(0, 0, 0, 0.7)
 }
 
-main .step a:hover{
+main a:hover{
     text-decoration: underline;
     color:rgba(0, 0, 0, 1)
 }
 
-main .step a:active{
+main a:active{
     color:rgba(0, 0, 0, 0.2)
 }
 
-p {
-    margin-bottom: 10px;
+
+.step{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .prev-next-button{
@@ -181,7 +182,6 @@ p {
     height: 50px;
 
     display:block;
-    
 }
 
 .prev-next-button .prev{

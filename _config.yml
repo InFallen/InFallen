@@ -37,7 +37,6 @@ defaults:
       type: "jekyllstepbystep"
     values:
       layout: "stepbystep"
-  -
   - 
     scope:
       path: ""                                # Пустая строка означает все файлы в проекте
@@ -45,7 +44,3 @@ defaults:
       layout: "default"                       # Используемый макет по-умолчанию
       author: "Артем 'InFallen' Нагорный"     # Автор страницы по-умолчанию
       sitename: "InFallen.space"
-
-
-kramdown:
-  gfm_quirks: [paragraph_end]
