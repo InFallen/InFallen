@@ -236,6 +236,20 @@ footer {
     
 }
 
+footer a {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.7)
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color:rgba(0, 0, 0, 1)
+}
+
+footer a:active{
+    color:rgba(0, 0, 0, 0.2)
+}
+
 footer div{
     position: relative;
     width: 100%;
