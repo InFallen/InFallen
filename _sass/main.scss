@@ -6,6 +6,7 @@
 :root{
     --width: 1000px;
     --nav-transition: 0.15s;
+    --top-margin-paragraph: 10px;
 }
 
 
@@ -145,16 +146,34 @@ nav .nav-link a img:active {
 
 // Стили основного контента
 main{
-    
     width: var(--width);
     padding: 10px;
 
-    background-color: rgba(190, 190, 190, 0.7);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     
+
+    background-color: rgba(190, 190, 190, 0.7);
+}
+
+main h1,
+main h2,
+main h3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main ol,
+main ul{
+    margin-top: var(--top-margin-paragraph);
+    margin-left: 40px;
 }
 
 p {
-    margin-bottom: 10px;
+    margin-top: var(--top-margin-paragraph);
 }
 
 main a {
@@ -171,10 +190,23 @@ main a:active{
     color:rgba(0, 0, 0, 0.2)
 }
 
+.highlight{
 
+    display: flex;
+    margin-top: var(--top-margin-paragraph);
+    padding: 10px;
+
+    background-color: rgba(200, 200, 100, 0.7);
+    border: 2px dashed black;
+}
+
+.highlight code {
+    line-height: 24px;
+}
 .step{
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 20px;
 }
 
 .prev-next-button{
@@ -182,6 +214,8 @@ main a:active{
     height: 50px;
 
     display:block;
+
+
 }
 
 .prev-next-button .prev{
