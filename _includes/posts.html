@@ -8,18 +8,15 @@
     <li>
         <a href="{{post.url}}">
             <span class="icon">
-
                 {% for chapter in site.chapters %}
-
                 {% if post.chapter == chapter.short_name %}
                 <img src="{{chapter.image}}" alt="icon {{chapter.short_name}}">
                 {% endif %}
-
                 {% endfor %}
-
             </span>
-            <h2>{{post.title}}</h2>
-            {{post.excerpt}}
+            {{ post.excerpt }}
+            <span class="date">{{ post.date | date_to_string }}</span>
+            {{ post.content | remove_first: post.excerpt | strip_html | truncatewords: 30 }}
         </a>
     </li>
     {% endfor %}

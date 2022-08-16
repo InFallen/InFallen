@@ -5,6 +5,9 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+    {% if site.tags != "" %}
+    {% include collecttags.html %}
+    {% endif %}
 </head>
 
 <body>
@@ -15,7 +18,9 @@
         {{ content }}
         {% include posts.html %}
     </main>
-
+    <div class="tags">
+        {% include archive.html %}
+    </div>
     {% include footer.html %}
 
 </body>

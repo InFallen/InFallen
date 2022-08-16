@@ -28,6 +28,8 @@
         </div>
     </div>
     <div class="copyright">
-        <span>&copy; {{ site.time | date: '%Y' }} <a href="/about.html" class="black">{{page.author}}</a></span>
+        {% assign year = site.time | date: '%Y' %}
+        <span>Copyright &copy; infallen.space {% if year == "2022" %}{{year}}{% else %}2022 - {{year}}{% endif %}. Все
+            права защищены</span>
     </div>
 </footer>

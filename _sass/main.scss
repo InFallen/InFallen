@@ -17,7 +17,7 @@
     font-family: "VCR", sans-serif;
 }
 
-
+/* #region Общие стили */
 body{
     min-width: var(--width);
     min-height: 100vh;
@@ -32,8 +32,75 @@ body{
     background-position-x: center;
 }
 
+h1,
+h2,
+h3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-// Навигация
+p {
+    margin-top: var(--top-margin-paragraph);
+}
+
+hr{
+    margin-top: 10px;
+    padding: 0;
+    height: 0;
+
+    border: none;
+    border-top: 2px dashed black;
+}
+
+strong {
+    padding: 1px;
+
+    font-weight: bolder;
+    color: darkgreen;
+}
+
+a {
+    text-decoration: none;
+    color:rgba(0, 100, 0, 0.7)
+}
+
+a:hover{
+    text-decoration: underline;
+    color:rgba(0, 0, 0, 1)
+}
+
+a:active{
+    color:rgba(0, 0, 0, 0.2)
+}
+
+.button {
+    width: 100px;
+    height: 46px;
+
+    display: block;
+
+    border: 2px dashed black;
+}
+
+.highlight{
+
+    display: flex;
+    margin-top: var(--top-margin-paragraph);
+    padding: 10px;
+
+    background-color: rgba(200, 200, 100, 0.7);
+    border: 2px dashed black;
+}
+
+.highlight code {
+    line-height: 24px;
+}
+
+/* #endregion */
+
+/* #region Навигация */
 nav {
     width: var(--width);
     height: 60px;
@@ -101,52 +168,12 @@ nav .nav-link a:active,
 nav .nav-link a img:active {
     opacity: 0.7;
 }
+/* #endregion */
 
-// Список постов
-
-.posts {
-    padding: 10px;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    list-style: none;
-}
-
-.posts li {
-    width: 300px;
-    height: 500px;
-    margin-top: 10px;
-    padding: 0;
-
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-.posts li a {
-    
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
-     
-    text-decoration: none;
-    color: black;
-}
-
-.posts li:hover{
-    transform: translateX(5px) translateY(5px);
-    box-shadow: none;
-}
-
-// Стили основного контента
+/* #region Основной контент */
 main{
     width: var(--width);
+    margin-bottom: 10px;
     padding: 10px;
 
     display: flex;
@@ -157,23 +184,10 @@ main{
     background-color: rgba(190, 190, 190, 0.85);
 }
 
-main h1,
-main h2,
-main h3 {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 main ol,
 main ul{
     margin-top: var(--top-margin-paragraph);
     margin-left: 40px;
-}
-
-p {
-    margin-top: var(--top-margin-paragraph);
 }
 
 main a {
@@ -189,20 +203,136 @@ main a:hover{
 main a:active{
     color:rgba(0, 0, 0, 0.2)
 }
+/* #endregion */
 
-.highlight{
-
-    display: flex;
-    margin-top: var(--top-margin-paragraph);
+/* #region Футер */
+footer {
+    width: var(--width);
     padding: 10px;
 
-    background-color: rgba(200, 200, 100, 0.7);
-    border: 2px dashed black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(190, 190, 190, 0.7);   
 }
 
-.highlight code {
-    line-height: 24px;
+footer img{
+    width: 30px;
 }
+
+footer div{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+footer div .socials,
+footer div .resources {
+    position: relative;
+    width: 50%;
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+}
+
+footer div .resources{
+    margin-right: 0;
+}
+
+footer div .socials ul,
+footer div .resources ul{
+    margin-top: 5px;
+
+    display: flex;
+}
+
+footer div .socials ul li,
+footer div .resources ul li {
+    list-style: none;
+}
+
+footer div .resources ul li {
+    display: flex;
+    align-items: center;
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: center;
+}
+/* #endregion */
+
+/* #region  Список постов */
+
+.posts {
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    list-style: none;
+}
+
+.posts li {
+    width: 300px;
+    height: 500px;
+    margin-top: 10px;
+    padding: 15px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.posts li a {
+    
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+
+    text-decoration: none;
+    color: black;
+}
+
+.posts li a .icon {
+    margin-bottom: 10px;
+
+    width: 100px;
+}
+
+.posts li a h1 {
+    margin: 0;
+    padding: 5px;
+
+    text-align: center;
+    font-size: 28px;
+}
+
+.posts li a p{
+    margin: 0;
+    padding: 5px;
+
+    text-align: justify;
+}
+
+.posts li:hover{
+    transform: translateX(5px) translateY(5px);
+    box-shadow: none;
+}
+/* #endregion */
+
+/* #region "Jekyll Шаг за шагом" */
 .step{
     margin-top: 5px;
     margin-bottom: 5px;
@@ -226,15 +356,6 @@ main a:active{
     float: right;
 }
 
-.button {
-    width: 100px;
-    height: 46px;
-
-    display: block;
-
-    border: 2px dashed black;
-}
-
 .prev a,
 .next a{
     width: 100%;
@@ -253,80 +374,46 @@ main a:active{
 .prev a img{
     transform: rotate(180deg);
 }
+/* #endregion */
 
-
-// Футер
-footer {
+/* #region tags*/
+.tags {
     width: var(--width);
-    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 
-    background-color: rgba(190, 190, 190, 0.7);
-    
+    background-color: rgba(190, 190, 190, 0.85);
 }
 
-footer a {
-    text-decoration: none;
-    color:rgba(0, 0, 0, 0.7)
+.tags a{
+    margin-left: 5px;
+    padding: .25em .5em;
+    font-size: 85%;
+    color: #bf616a;
+
+    border:1px dashed rgba(210, 210, 210, 1);
 }
 
-footer a:hover{
-    text-decoration: underline;
-    color:rgba(0, 0, 0, 1)
+.tags a:hover {
+    font-size: 100%;
 }
 
-footer a:active{
-    color:rgba(0, 0, 0, 0.2)
+.tags a:active{
+    color: rgba(150, 150, 150, 0.5);
 }
+/* #endregion*/
 
-footer div{
-    position: relative;
-    width: 100%;
-    display: flex;
-}
 
-footer .socials,
-footer .resources {
-    position: relative;
-    width: 50%;
-    margin-right: 10px;
 
-    display: flex;
-    flex-direction: column;
-    
 
-    list-style: none;
-}
 
-footer .resources{
-    margin-right: 0;
-}
 
-footer .resources li {
-    display: flex;
-    align-items: center;
-}
 
-footer ul {
-    margin-top: 5px;
-    
-    display: flex;
-}
 
-footer ul li {
-    list-style: none;
-}
 
-footer ul li a img{
-    width: 30px;
-}
 
-footer .copyright{
-    display: flex;
-    justify-content: center;
-}
+
