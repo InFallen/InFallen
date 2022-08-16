@@ -1,5 +1,6 @@
 ---
-chapter: jekyll
+icon: jekyll
+chapters: jekyll github
 title: Jekyll Tags на GitHub Pages
 tags: jekyll blog github-pages
 ---

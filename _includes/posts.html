@@ -9,7 +9,7 @@
         <a href="{{post.url}}">
             <span class="icon">
                 {% for chapter in site.chapters %}
-                {% if post.chapter == chapter.short_name %}
+                {% if post.icon == chapter.short_name %}
                 <img src="{{chapter.image}}" alt="icon {{chapter.short_name}}">
                 {% endif %}
                 {% endfor %}

@@ -1,5 +1,5 @@
 ---
-chapter: jekyll
+icon: jekyll
 chapters: jekyll github
 title: Jekyll - GitHub Actions
 tags: jekyll blog github github-pages 
