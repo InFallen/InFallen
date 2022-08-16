@@ -2,7 +2,7 @@
     {% if page.short_name == 'home' %}
     {% assign filtered_posts = site.posts %}
     {% else %}
-    {% assign filtered_posts = site.posts | where:'chapter', page.short_name %}
+    {% assign filtered_posts = site.posts | where_exp:'post', "post.chapters contains page.short_name" %}
     {% endif %}
     {% for post in filtered_posts %}
     <li>

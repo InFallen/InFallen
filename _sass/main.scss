@@ -184,6 +184,10 @@ main{
     background-color: rgba(190, 190, 190, 0.85);
 }
 
+main p {
+    margin-bottom: 10px;
+}
+
 main ol,
 main ul{
     margin-top: var(--top-margin-paragraph);

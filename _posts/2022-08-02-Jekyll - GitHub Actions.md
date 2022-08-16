@@ -1,7 +1,8 @@
 ---
 chapter: jekyll
+chapters: jekyll github
 title: Jekyll - GitHub Actions
-tags: jekyll blog github-pages
+tags: jekyll blog github github-pages 
 ---
 # {{page.title}}
 
