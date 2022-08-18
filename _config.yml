@@ -1,5 +1,16 @@
+# Базовое имя хоста и протокол для вашего сайта
+url: "https://infallen.space"
+
+# Используемые плагины
+plugins:
+  - jekyll-sitemap
+  - jekyll-compose
+
 # Настройки сборки
 markdown: kramdown
+
+kramdown:
+  parse_block_html: true
 
 # Настройка временной зоны
 timezone: "Europe/Moscow"
@@ -22,6 +33,10 @@ collections:
 
 # Настройка макетов по умолчанию
 defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
   -
     scope:
       path: ""

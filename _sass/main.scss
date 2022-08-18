@@ -84,6 +84,14 @@ a:active{
     border: 2px dashed black;
 }
 
+.note {
+    margin-top: var(--top-margin-paragraph);
+    padding: 10px;
+
+    background-color: rgba(200, 150, 150, 0.7);
+    border: 2px dashed black;
+}
+
 .highlight{
 
     display: flex;
@@ -188,6 +196,10 @@ main p {
     margin-bottom: 10px;
 }
 
+main p img {
+    width: 100%;
+}
+
 main ol,
 main ul{
     margin-top: var(--top-margin-paragraph);
@@ -271,7 +283,7 @@ footer .copyright{
 }
 /* #endregion */
 
-/* #region  Список постов */
+/* #region Список постов */
 
 .posts {
     padding: 10px;
