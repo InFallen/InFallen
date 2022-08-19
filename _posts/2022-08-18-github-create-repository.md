@@ -70,7 +70,7 @@ tags: github
 
 ## <a name="clone"></a>Клонирование репозитория
 
-Для клонирования репозитория я использую сразу встроенный терминал в Visual Studio code. Инструкцию по установке можно найти [тут]({% post_url 2022-08-18-vscode-install %}). Запускаем VSCode и нажимаем **Clone Git Repository...**
+Для клонирования репозитория я использую сразу встроенный терминал в Visual Studio code. Инструкцию по установке можно найти [тут]({% post_url 2022-08-19-vscode-install %}). Запускаем VSCode и нажимаем **Clone Git Repository...**
 
 ![](/assets/img/2022-08-17/gh_create_rep_9.png)
 
