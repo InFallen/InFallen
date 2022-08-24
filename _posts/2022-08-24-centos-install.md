@@ -120,7 +120,7 @@ CentOS (/ˈsɛntɒs/, от англ. Community ENTerprise Operating System) — 
 **Network & Hostname**
 
 <!-- Сделать ссылку завтра -->
-Настройка сети и имени системы, можно посмотреть по [ссылкe]({% post_url 2022-08-25-centos-set-lan %}).
+Настройка сети и имени системы, можно посмотреть по [ссылкe]({% post_url 2022-08-24-centos-set-lan %}).
 
 ![](/assets/img/2022-08-24/centos_install_10_3.png)
 
