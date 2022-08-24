@@ -16,7 +16,7 @@
             </span>
             {{ post.excerpt }}
             <span class="date">{{ post.date | date_to_string }}</span>
-            {{ post.content | remove_first: post.excerpt | strip_html | truncatewords: 30 }}
+            {{ post.content | remove_first: post.excerpt | strip_html | truncatewords: 20 }}
         </a>
     </li>
     {% endfor %}
