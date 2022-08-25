@@ -2,7 +2,7 @@
 icon: linux
 chapters: linux centos
 title: Установка CentOS
-tags: centos install
+tags: centos
 ---
 # {{page.title}}
 
