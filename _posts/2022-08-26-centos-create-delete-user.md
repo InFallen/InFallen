@@ -1,8 +1,8 @@
 ---
 icon: linux
-chapters: linux centos
+chapters: os centos-7
 title: Создание и удаление пользователей CentOS 7
-tags: centos
+tags: centos-7 linux
 ---
 # {{page.title}}
 

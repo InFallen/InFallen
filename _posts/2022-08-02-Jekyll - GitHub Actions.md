@@ -1,6 +1,6 @@
 ---
 icon: jekyll
-chapters: jekyll github
+chapters: jekyll github cms
 title: Jekyll - GitHub Actions
 tags: jekyll blog github github-pages 
 ---

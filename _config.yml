@@ -46,12 +46,6 @@ defaults:
   -
     scope:
       path: ""
-      type: "chapters"
-    values:
-      layout: "chapter"
-  -
-    scope:
-      path: ""
       type: "jekyllstepbystep"
     values:
       layout: "stepbystep"

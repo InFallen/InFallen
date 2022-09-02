@@ -1,8 +1,8 @@
 ---
 icon: vscode
-chapters: vscode microsoft macos linux
+chapters: text-editors vscode windows macos
 title: Установка Visual Studio Code
-tags: vscode text-editor microsoft macos linux 
+tags: vscode text-editors windows macos linux 
 ---
 # {{page.title}}
 

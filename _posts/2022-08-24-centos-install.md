@@ -1,8 +1,8 @@
 ---
 icon: linux
-chapters: linux centos
+chapters: os centos-7
 title: Установка CentOS
-tags: centos
+tags: centos-7 linux
 ---
 # {{page.title}}
 
