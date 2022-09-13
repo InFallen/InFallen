@@ -1,11 +1,11 @@
-<ul class="posts">
+<ul class="list-group">
     {% if page.short_name == 'home' %}
     {% assign filtered_posts = site.posts %}
     {% else %}
     {% assign filtered_posts = site.posts | where_exp:'post', "post.chapters contains page.short_name" %}
     {% endif %}
     {% for post in filtered_posts %}
-    <li>
+    <li class="list-group-item">
         <a href="{{post.url}}">
             <span class="icon">
                 {% for chapter in site.chapters %}

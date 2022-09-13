@@ -42,3 +42,5 @@ main:
         url: /ide-text-editors/vscode.html
       - page: PhpStorm
         url: /ide-text-editors/phpstorm.html
+  - title: Об авторе
+    url: /about.html

@@ -1,11 +1,13 @@
 <footer>
+    <div class="tags">
+        {% include archive.html %}
+    </div>
     <div>
-        <div class="socials">
+        <div>
             <h4>Социальные сети</h4>
-            <ul>
-
+            <ul class="list-group">
                 {% for social in site.socials %}
-                <li>
+                <li class="list-group-item">
                     <a href="{{social.link}}">
                         <img src="{{social.image}}" alt="icon {{social.name}}">
                     </a>
@@ -14,11 +16,11 @@
 
             </ul>
         </div>
-        <div class="resources">
+        <div>
             <h4>Используемые ресурсы</h4>
-            <ul>
+            <ul class="list-group">
                 {% for resource in site.resources %}
-                <li>
+                <li class="list-group-item">
                     <a href="{{resource.link}}">
                         <img src="{{resource.image}}" alt="icon {{resource.name}}">
                     </a> - {{resource.description}}.
