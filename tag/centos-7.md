@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: centos-7"
+title: "Тег: centos-7"
 tag: centos-7
 ---

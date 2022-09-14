@@ -20,10 +20,77 @@
 }
 
 body{
+    width: 100%;
+
     background-image: url(/assets/img/back-pixel-city.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
+}
+
+main {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(210,210,210,0.5);
+}
+
+.container.post{
+    margin:10px;
+
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(210,210,210,0.5);
+
+    border: 2px dashed black;
+}
+
+h1, h2, h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container.post a{
+    color: darkblue;
+}
+
+.container.post a:hover{
+    font-size:18px;
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+.container.post a nobr{
+    color: darkblue;
+}
+
+.container.post a nobr:hover{
+    font-size: 16px;
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+.container .highlight{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+
+    display: flex;
+    align-items: center;
+
+    background-color: aqua;
+
+    border: 1px dashed black;
+}
+
+.container .highlight pre{
+    margin: 0;
+    padding: 0;
+}
+
+p img{
+    width: 100%;
 }
 
 .navbar{
@@ -52,7 +119,7 @@ body{
     text-decoration: underline;
 }
 .navbar-toggler {
-    margin-left: 4px;
+    
     margin-bottom: 2px;
     width: 100%;
 
@@ -134,14 +201,23 @@ body{
 }
 
 .list-group-item.post{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 8px;
 
     border: 2px dashed black !important;
-
+    border-radius: 0;
+    
     background-color: rgba(210,210,210,0.9);
+    box-shadow: 5px 5px 2px rgba(100,100,100,0.9);
 }
+
+.list-group-item.post:hover{
+    transform: translateX(5px) translateY(5px);
+    box-shadow: none;
+}
+
 .post a {
+
     text-decoration: none;
     color: black;
 }
@@ -183,8 +259,14 @@ body{
 }
 
 footer {
+    width: 100%;
+
     display: flex;
     flex-direction: column;
+}
+
+footer .container{
+    padding: 0;
 }
 
 footer .tags {

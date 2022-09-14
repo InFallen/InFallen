@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: text-editors"
+title: "Тег: text-editors"
 tag: text-editors
 ---

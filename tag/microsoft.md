@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: microsoft"
+title: "Тег: microsoft"
 tag: microsoft
 ---
