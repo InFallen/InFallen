@@ -12,7 +12,9 @@
                     <div class="icon">
                         <img src="{{post.icon}}" alt="icon {{chapter.short_name}}">
                     </div>
-                    {{ post.excerpt }}
+                    <div>
+                        {{ post.excerpt }}
+                    </div>
                 </div>
                 <div class="date">{{ post.date | date_to_string }}</div>
                 {{ post.content | remove_first: post.excerpt | strip_html | truncatewords: 20 }}

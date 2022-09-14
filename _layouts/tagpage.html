@@ -1,17 +1,19 @@
 ---
 layout: default
 ---
-<div>
+<div class="container">
     <h1>Статьи с тегом: {{ page.tag }}</h1>
     <ul class="list-group posts">
         {% for post in site.tags[page.tag] %}
         <li class="list-group-item post">
             <a href="{{post.url}}">
                 <div class="title">
-                    <span class="icon">
+                    <div class="icon">
                         <img src="{{post.icon}}" alt="icon">
-                    </span>
-                    {{ post.excerpt }}
+                    </div>
+                    <div>
+                        {{ post.excerpt }}
+                    </div>
                 </div>
                 <div class="date">{{ post.date | date_to_string }}</div>
                 {{ post.content | remove_first: post.excerpt | strip_html | truncatewords: 20 }}
