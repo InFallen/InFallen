@@ -1,23 +1,23 @@
-<ul class="list-group">
-    {% if page.short_name == 'home' %}
-    {% assign filtered_posts = site.posts %}
-    {% else %}
-    {% assign filtered_posts = site.posts | where_exp:'post', "post.chapters contains page.short_name" %}
-    {% endif %}
-    {% for post in filtered_posts %}
-    <li class="list-group-item">
-        <a href="{{post.url}}">
-            <span class="icon">
-                {% for chapter in site.chapters %}
-                {% if post.icon == chapter.short_name %}
-                <img src="{{chapter.image}}" alt="icon {{chapter.short_name}}">
-                {% endif %}
-                {% endfor %}
-            </span>
-            {{ post.excerpt }}
-            <span class="date">{{ post.date | date_to_string }}</span>
-            {{ post.content | remove_first: post.excerpt | strip_html | truncatewords: 20 }}
-        </a>
-    </li>
-    {% endfor %}
-</ul>
+<div class="container">
+    <ul class="list-group posts">
+        {% if page.short_name == 'home' %}
+        {% assign filtered_posts = site.posts %}
+        {% else %}
+        {% assign filtered_posts = site.posts | where_exp:'post', "post.chapters contains page.short_name" %}
+        {% endif %}
+        {% for post in filtered_posts %}
+        <li class="list-group-item post">
+            <a href="{{post.url}}">
+                <div class="title">
+                    <div class="icon">
+                        <img src="{{post.icon}}" alt="icon {{chapter.short_name}}">
+                    </div>
+                    {{ post.excerpt }}
+                </div>
+                <div class="date">{{ post.date | date_to_string }}</div>
+                {{ post.content | remove_first: post.excerpt | strip_html | truncatewords: 20 }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

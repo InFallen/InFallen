@@ -1,5 +1,5 @@
 ---
-icon: jekyll
+icon: /assets/img/icon-jekyll.png
 chapters: jekyll github cms
 title: Jekyll - GitHub Actions
 tags: jekyll blog github github-pages 

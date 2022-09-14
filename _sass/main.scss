@@ -28,6 +28,7 @@ body{
 
 .navbar{
     width: 100%;
+    margin-bottom: 20px;
 
     flex-direction: column;
     justify-content: center;
@@ -36,6 +37,9 @@ body{
 
 .navbar .container {
     width: 100%;
+
+    margin: 0;
+    padding: 0;
 
     flex-direction: column;
     justify-content: space-around;
@@ -62,9 +66,6 @@ body{
     color: black;
 }
 
-.navbar-collapse {
-    width: 100%;
-}
 .navbar-nav {
     width: 100%;
     flex-wrap: wrap;
@@ -113,6 +114,11 @@ body{
     padding-bottom: 5px; 
 }
 
+.nav-item a {
+    width: 100%;
+    text-align: center;
+}
+
 .divider{
     margin: 0;
     padding: 0;
@@ -123,13 +129,71 @@ body{
     display: none;
 }
 
-.dropdown-item{
-    text-align: center;
-    vertical-align: middle;
+.list-group-item.post{
+    margin-bottom: 10px;
+
+    border: 2px dashed black !important;
+
+    background-color: rgba(210,210,210,0.9);
+}
+.post a {
+    text-decoration: none;
+    color: black;
 }
 
+.post a .title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.post a .icon {
+    width: 33%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post a h1{
+    width: 66%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-wrap: break-word;
+    text-align: center;
+    font-size: 25px;
+}
+
+.post a .date{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+footer .tags {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+
+    background-color: rgba(210,210,210,0.9);
+
+    border: 2px dashed black;
+}
+
+footer .tags a{
+    margin-right: 15px;
+
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+footer .tags a nobr:hover {
+    font-size: 18px;
+    color: darkgreen;
+    text-decoration: underline;
+}
 
 @media screen and (max-width: 992px){
     .navbar-nav>.nav-item{
@@ -139,6 +203,38 @@ body{
     .dropdown-menu{
         border: none;
         border-top: 2px dashed black;
+    }
+
+    .post a .title{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .post a .icon {
+        width: 15%;
+    }
+
+    .post a .icon img {
+        width: 72px;
+    }
+
+    .post a h1{
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    .list-group.posts{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .list-group-item.post{
+        width: 30%;
     }
 }
 

@@ -1,5 +1,5 @@
 ---
-icon: linux
+icon: /assets/img/icon-centos.png
 chapters: os centos-7
 title: Создание и удаление пользователей CentOS 7
 tags: centos-7 linux

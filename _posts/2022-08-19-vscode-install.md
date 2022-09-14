@@ -1,5 +1,5 @@
 ---
-icon: vscode
+icon: /assets/img/icon-vscode.png
 chapters: text-editors vscode windows macos
 title: Установка Visual Studio Code
 tags: vscode text-editors windows macos linux 

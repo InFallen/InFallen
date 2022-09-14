@@ -1,5 +1,5 @@
 ---
-icon: linux
+icon: /assets/img/icon-centos.png
 chapters: os centos-7
 title: Установка CentOS
 tags: centos-7 linux
