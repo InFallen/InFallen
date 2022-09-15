@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: github-pages"
+title: "Тег: github-pages"
 tag: github-pages
 ---

@@ -1,35 +1,39 @@
 <footer>
-    <div>
-        <div class="socials">
-            <h4>Социальные сети</h4>
-            <ul>
-
-                {% for social in site.socials %}
-                <li>
-                    <a href="{{social.link}}">
-                        <img src="{{social.image}}" alt="icon {{social.name}}">
-                    </a>
-                </li>
-                {% endfor %}
-
-            </ul>
+    <div class="container">
+        <div class="tags">
+            {% include archive.html %}
         </div>
-        <div class="resources">
-            <h4>Используемые ресурсы</h4>
-            <ul>
-                {% for resource in site.resources %}
-                <li>
-                    <a href="{{resource.link}}">
-                        <img src="{{resource.image}}" alt="icon {{resource.name}}">
-                    </a> - {{resource.description}}.
-                </li>
-                {% endfor %}
-            </ul>
+        <div class="links">
+            <div>
+                <h4>Социальные сети</h4>
+                <ul class="list-group socials">
+                    {% for social in site.socials %}
+                    <li class="list-group-item">
+                        <a href="{{social.link}}">
+                            <img src="{{social.image}}" alt="icon {{social.name}}">
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div>
+                <h4>Используемые ресурсы</h4>
+                <ul class="list-group">
+                    {% for resource in site.resources %}
+                    <li class="list-group-item">
+                        <a href="{{resource.link}}">
+                            <img src="{{resource.image}}" alt="icon {{resource.name}}">
+                        </a> - {{resource.description}}.
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="copyright">
-        {% assign year = site.time | date: '%Y' %}
-        <span>Copyright &copy; infallen.space {% if year == "2022" %}{{year}}{% else %}2022 - {{year}}{% endif %}. Все
-            права защищены</span>
+        <div class="copyright">
+            {% assign year = site.time | date: '%Y' %}
+            <span>Copyright &copy; infallen.space {% if year == "2022" %}{{year}}{% else %}2022 - {{year}}{% endif %}.
+                Все
+                права защищены</span>
+        </div>
     </div>
 </footer>

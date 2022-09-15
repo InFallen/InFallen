@@ -1,0 +1,46 @@
+main:
+  - title: Блог
+    url: /
+  - title: Операционные системы
+    url: /os.html
+    chapters:
+      - page: Windows
+        url: /os/windows.html
+      - page: Windows Server
+        url: /os/windows-server.html
+      - page: MacOS
+        url: /os/macos.html
+      - page: CentOS 7
+        url: /os/centos-7.html
+  - title: Git и все что с ним связано
+    url: /git.html
+    chapters:
+      - page: Основы Git
+        url: /git/basics.html
+      - page: GitHub
+        url: /git/github.html
+  - title: Языки программирования и не только
+    url: programming-language.html
+    chapters:
+      - page: JavaScript
+        url: /lang/javascript.html
+      - page: Python
+        url: /lang/python.html
+      - page: Markdown
+        url: /lang/markdown.html
+  - title: CMS
+    url: /cms.html
+    chapters:
+      - page: Jekyll
+        url: /cms/jekyll.html
+      - page: WordPress
+        url: /cms/wordpress.html
+  - title: IDE, Тестовые редакторы
+    url: /ide-text-editors.html
+    chapters:
+      - page: Visual Studio Code
+        url: /ide-text-editors/vscode.html
+      - page: PhpStorm
+        url: /ide-text-editors/phpstorm.html
+  - title: Об авторе
+    url: /about.html

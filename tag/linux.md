@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: linux"
+title: "Тег: linux"
 tag: linux
 ---

@@ -1,5 +1,5 @@
 ---
-icon: github
+icon: /assets/img/icon-github.png
 chapters: github
 title: Создание репозитория на GitHub
 tags: github 

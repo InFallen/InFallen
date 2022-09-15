@@ -1,8 +1,8 @@
 ---
-icon: linux
-chapters: linux centos
+icon: /assets/img/icon-centos.png
+chapters: os centos-7
 title: Установка CentOS
-tags: centos
+tags: centos-7 linux
 ---
 # {{page.title}}
 
@@ -39,7 +39,7 @@ CentOS (/ˈsɛntɒs/, от англ. Community ENTerprise Operating System) — 
 
 Для дальнейшей установки, вам нужно создать загрузочную флешку со скачанным образом. Дальнейшее описание установки будет идти с использованием образа CentOS-7-x86_64-Minimal-2009.iso.
 
-##<a name="install"></a>Установка
+## <a name="install"></a>Установка
 
 Для установки загрузимся с созданной загрузочной флешки и увидим данный экран:
 

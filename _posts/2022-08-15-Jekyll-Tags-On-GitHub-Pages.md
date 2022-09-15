@@ -1,6 +1,6 @@
 ---
-icon: jekyll
-chapters: jekyll github
+icon: /assets/img/icon-jekyll.png
+chapters: jekyll github cms
 title: Jekyll Tags на GitHub Pages
 tags: jekyll blog github-pages
 ---

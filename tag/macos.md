@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: macos"
+title: "Тег: macos"
 tag: macos
 ---

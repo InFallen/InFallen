@@ -1,8 +1,8 @@
 ---
-icon: linux
-chapters: linux centos
+icon: /assets/img/icon-centos.png
+chapters: os centos-7
 title: Настройка сети CentOS 7
-tags: centos
+tags: linux centos-7
 ---
 # {{page.title}}
 
