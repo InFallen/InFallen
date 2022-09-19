@@ -333,6 +333,17 @@ footer .links .socials{
     flex-direction: row;
 }
 
+footer .links .resources {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+footer .links .resources li {
+    font-size: 12px;
+}
+footer .links .resources a img{
+    width: 20px;
+}
+
 footer .links .list-group-item{
     padding: 0;
     background: none;
