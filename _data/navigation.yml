@@ -42,5 +42,14 @@ main:
         url: /ide-text-editors/vscode.html
       - page: PhpStorm
         url: /ide-text-editors/phpstorm.html
+  - title: Software
+    url: /software.html
+    chapters:
+      - page: Zabbix
+        url: /software/zabbix.html
+      - page: Nginx
+        url: /software/nginx.html
+      - page: Apache
+        url: /software/apache.html
   - title: Об авторе
     url: /about.html
