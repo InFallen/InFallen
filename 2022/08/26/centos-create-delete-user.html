@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Создание и удаление пользователей CentOS 7</title>
+    <!-- CSS only -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+
+    
+    
+
+
+
+
+
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">InFallen.space</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Блог</a>
+                </li>
+
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Операционные системы</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/windows.html">Windows</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/windows-server.html">Windows Server</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/macos.html">MacOS</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/centos-7.html">CentOS 7</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Git и все что с ним связано</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/git/basics.html">Основы Git</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/git/github.html">GitHub</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Языки программирования и не только</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/javascript.html">JavaScript</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/python.html">Python</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/markdown.html">Markdown</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">CMS</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/cms/jekyll.html">Jekyll</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/cms/wordpress.html">WordPress</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">IDE, Тестовые редакторы</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/ide-text-editors/vscode.html">Visual Studio Code</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/ide-text-editors/phpstorm.html">PhpStorm</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Software</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/zabbix.html">Zabbix</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/nginx.html">Nginx</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/apache.html">Apache</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/about.html">Об авторе</a>
+                </li>
+
+                
+
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        </header>
+
+        <main>
+            <div class="container post">
+    <h1>Создание и удаление пользователей CentOS 7</h1>
+    <span>
+        [
+        
+        
+        <a href="/tag/centos-7" target="_blank"><code
+                class="highligher-rouge"><nobr>centos-7</nobr></code>&nbsp;</a>
+        
+        
+        <a href="/tag/linux" target="_blank"><code
+                class="highligher-rouge"><nobr>linux</nobr></code>&nbsp;</a>
+        
+        ]
+    </span>
+    <p>26 Aug 2022 - Артем 'InFallen' Нагорный</p>
+
+
+    
+<hr />
+<p>В данной статье будет рассмотрено создание, удаление пользователей в СentOS 7, а назначение прав superuser.</p>
+
+<p>Для создания пользователя в CentOS 7 используется команда <strong>adduser</strong>.
+Из под пользователя <strong>root</strong>:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">adduser username</code></pre>
+</figure>
+
+<p>Либо из под пользователя с привилегиями sudo</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>adduser username</code></pre>
+</figure>
+
+<p>Далее нужно установить пароль для созданного юзера командой passwd.</p>
+
+<p>Для пользователя root:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">passwd username</code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>passwd username</code></pre>
+</figure>
+
+<h2 id="добавление-и-удаление-пользователей-из-групп-передача-привилегий-sudo">Добавление и удаление пользователей из групп. Передача привилегий Sudo</h2>
+<p>Если пользователю требуется выполнять команды с правами root, ему нужно предоставить доступ к sudo добавив в группу wheel.<br />
+Сделать это можно с помощью команды gpasswd c флагом -a.<br />
+Флаг -d позволяет удалить пользователя из группы.<br />
+Для пользователя root:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">gpasswd <span class="nt">-a</span> username wheel
+gpasswd <span class="nt">-d</span> username wheel</code></pre>
+</figure>
+
+<p>Для пользователя с правами sudo:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>gpasswd <span class="nt">-a</span> username wheel
+<span class="nb">sudo </span>gpasswd <span class="nt">-d</span> username wheel</code></pre>
+</figure>
+
+<p>Теперь новый пользователь может запускать команды с правами администратора, используя в начале команды <strong>sudo</strong>:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash"><span class="nb">sudo command</span></code></pre>
+</figure>
+
+<p>При этом пользователю потребуется ввести пароль от учетной записи. Также если понадобиться запускать несколько команд подряд с правами администратора, то можно использовать режим <strong>superuser</strong>, выполнив команду:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>su</code></pre>
+</figure>
+
+<p>После ввода данной команды пользователю, также потребуется ввести пароль от своей учетной записи. Обратите внимание, что теперь командная строка показывает, что вы будете выполнять команды от имени пользователя <strong>root</strong>:</p>
+
+<p><img src="/assets/img/2022-08-26/centos_create_user_01.png" alt="" /></p>
+
+<p>Для выхода из режима <strong>superuser</strong> просто введите команду:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash"><span class="nb">exit</span></code></pre>
+</figure>
+
+<p><img src="/assets/img/2022-08-26/centos_create_user_02.png" alt="" /></p>
+
+<h3 id="просмотр-групп-пользователя-и-пользователей-в-группе">Просмотр групп пользователя и пользователей в группе</h3>
+
+<p>Для просмотра групп пользователя используется команда lid:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">lid nagorny</code></pre>
+</figure>
+
+<p>Для пользователя с привилегиями не забываем добавить в начало команды <strong>sudo</strong>.
+Если будет нужно просмотреть пользователей в группе, то используется так же самая команда, но с флагом <strong>-g</strong>, например:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">lid <span class="nt">-g</span> wheel</code></pre>
+</figure>
+
+<p>Не забываем для пользователей из группы <strong>wheel</strong> в начале команды ставить <strong>sudo</strong>.</p>
+
+<h2 id="удаление-пользователей">Удаление пользователей.</h2>
+<p>Для удаления ненужный учетных записей пользователей используется:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">userdel username</code></pre>
+</figure>
+
+<p>Если вам нужно, также удалить домашний каталог, то используйте:</p>
+
+<figure class="highlight">
+  <pre><code class="language-bash" data-lang="bash">userdel <span class="nt">-r</span> username</code></pre>
+</figure>
+
+<p>И не забываем для выполнения пользователем с привилегиями использовать <strong>sudo</strong> перед командой.</p>
+
+<p>Обе вышеприведенные команды удаляют пользователя изо всех групп, в которых он состоял (например, из группы wheel). Если в будущем в системе появится пользователь с таким же именем, его нужно будет повторно добавить в группу wheel, чтобы предоставить ему привилегии <strong>sudo</strong>.</p>
+
+</div>
+            <div class="container">
+    <ul class="list-group posts">
+        
+        
+    </ul>
+</div>
+        </main>
+
+        <footer>
+    <div class="container">
+        <div class="tags">
+            
+
+
+
+
+<a href="/tag/linux" target="_blank">
+    <nobr>linux</nobr>
+</a>
+
+
+
+<a href="/tag/centos-7" target="_blank">
+    <nobr>centos-7</nobr>
+</a>
+
+
+
+<a href="/tag/jekyll" target="_blank">
+    <nobr>jekyll</nobr>
+</a>
+
+
+
+<a href="/tag/github-pages" target="_blank">
+    <nobr>github-pages</nobr>
+</a>
+
+
+
+<a href="/tag/github" target="_blank">
+    <nobr>github</nobr>
+</a>
+
+
+
+<a href="/tag/blog" target="_blank">
+    <nobr>blog</nobr>
+</a>
+
+
+
+<a href="/tag/windows" target="_blank">
+    <nobr>windows</nobr>
+</a>
+
+
+
+<a href="/tag/vscode" target="_blank">
+    <nobr>vscode</nobr>
+</a>
+
+
+
+<a href="/tag/text-editors" target="_blank">
+    <nobr>text-editors</nobr>
+</a>
+
+
+
+<a href="/tag/macos" target="_blank">
+    <nobr>macos</nobr>
+</a>
+
+        </div>
+        <div class="links">
+            <div>
+                <h4>Социальные сети</h4>
+                <ul class="list-group socials">
+                    
+                    <li class="list-group-item">
+                        <a href="https://github.com/InFallen" target="_blank">
+                            <img src="/assets/img/icon-github.png" alt="icon GitHub">
+                        </a>
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <a href="https://vk.com/infallen" target="_blank">
+                            <img src="/assets/img/icon-vk.png" alt="icon VK">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4>Используемые ресурсы</h4>
+                <ul class="list-group resources">
+                    
+                    <li class="list-group-item">
+                        <a href="https://getbootstrap.com/" target="_blank">
+                            <img src="/assets/img/icon-bootstrap.png" alt="icon Bootstrap">
+                        </a> - инструменты для создания сайтов и веб-приложений.
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <a href="https://icons8.ru/" target="_blank">
+                            <img src="/assets/img/icon-icons8.png" alt="icon Icons8">
+                        </a> - иконки на любой случай.
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            
+            <span>Copyright &copy; infallen.space 2022.
+                Все
+                права защищены</span>
+        </div>
+    </div>
+</footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script scr="/assets/js/scripts.js"></script>
+
+</body>
+
+</html>

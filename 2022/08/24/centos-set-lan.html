@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Настройка сети CentOS 7</title>
+    <!-- CSS only -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+
+    
+    
+
+
+
+
+
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">InFallen.space</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Блог</a>
+                </li>
+
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Операционные системы</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/windows.html">Windows</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/windows-server.html">Windows Server</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/macos.html">MacOS</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/centos-7.html">CentOS 7</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Git и все что с ним связано</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/git/basics.html">Основы Git</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/git/github.html">GitHub</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Языки программирования и не только</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/javascript.html">JavaScript</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/python.html">Python</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/markdown.html">Markdown</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">CMS</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/cms/jekyll.html">Jekyll</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/cms/wordpress.html">WordPress</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">IDE, Тестовые редакторы</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/ide-text-editors/vscode.html">Visual Studio Code</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/ide-text-editors/phpstorm.html">PhpStorm</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Software</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/zabbix.html">Zabbix</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/nginx.html">Nginx</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/apache.html">Apache</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/about.html">Об авторе</a>
+                </li>
+
+                
+
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        </header>
+
+        <main>
+            <div class="container post">
+    <h1>Настройка сети CentOS 7</h1>
+    <span>
+        [
+        
+        
+        <a href="/tag/linux" target="_blank"><code
+                class="highligher-rouge"><nobr>linux</nobr></code>&nbsp;</a>
+        
+        
+        <a href="/tag/centos-7" target="_blank"><code
+                class="highligher-rouge"><nobr>centos-7</nobr></code>&nbsp;</a>
+        
+        ]
+    </span>
+    <p>24 Aug 2022 - Артем 'InFallen' Нагорный</p>
+
+
+    
+<hr />
+
+<ol>
+  <li><a href="#on-install">Настройка во время установки</a></li>
+  <li><a href="#on-system">Настройка в установленной системе</a></li>
+</ol>
+
+<h2 id="настройка-во-время-установки">Настройка во время установки</h2>
+
+<p>Первый и самый простой вариант настройки сети - это настройка во время установки. На экране настроек нам нужно найти раздел System и нажать на Network &amp; Host name.</p>
+
+<p><img src="/assets/img/2022-08-25/centos_set_lan_01.png" alt="" /></p>
+
+<p>На экране настроек сети, есть несколько параметров:</p>
+
+<p><img src="/assets/img/2022-08-25/centos_set_lan_02.png" alt="" /></p>
+
+<ol>
+  <li>Список сетевых интерфейсов.</li>
+  <li>Информация об выбранном интерфейсе и кнопка включения-выключения.</li>
+  <li>Настройки выбранного интерфейса.</li>
+  <li>Название хоста.</li>
+</ol>
+
+<p>После нажатия на <strong>кнопку включения(2)</strong>, выбранный интерфейс станет активным и получит настройки по dhcp.</p>
+
+<p><img src="/assets/img/2022-08-25/centos_set_lan_03.png" alt="" /></p>
+
+<p>Если вам нужно сменить настройки, то вы можете нажать на кнопку <strong>Configure(3)</strong>. Попав в окно дополнительных настроек, вы сможете изменить <strong>имя интерфейса</strong>, выбрать режим настроек <strong>Manual</strong>, задать <strong>ip-адрес</strong>, задать <strong>dns-серверы</strong>. И после выполнения всех настроек нажать <strong>Save</strong>.</p>
+
+<p><img src="/assets/img/2022-08-25/centos_set_lan_04.png" alt="" /></p>
+
+<p>Для изменения имени системы вводите в поле <strong>Host name</strong> новое имя и нажимаете кнопку <strong>Apply</strong>.</p>
+
+<p><img src="/assets/img/2022-08-25/centos_set_lan_05.png" alt="" /></p>
+
+<p>Для продолжения других настроек нажимаем на кнопку <strong>Done</strong>.
+На этом настройки сети во время установки закончены.</p>
+
+<h2 id="настройка-в-установленной-системе">Настройка в установленной системе</h2>
+
+<p>Если вам нужно просмотреть или изменить конфигурацию сети в уже установленной системе, для просмотра вы можете использовать команды ip a или ip addr.</p>
+
+<p>После ввода одной из команд вы увидите на экране все ваши сетевые интерфейсы и их конфигурацию.</p>
+
+<p><img src="/assets/img/2022-08-25/centos_set_lan_06.png" alt="" /></p>
+
+<p>Из данной информации мы увидели что наш сетевой интерфейс называется <strong>ens192</strong>.</p>
+
+<div class="note">
+  <p>Названия интерфейса может отличаться.</p>
+</div>
+
+<p>Файлы сетевых настроек находятся в директории <strong>etc/sysconfig/network-scripts</strong>, переходим в нее командой <strong>cd /etc/sysconfig/network-scripts</strong>.</p>
+
+<p><img src="/assets/img/2022-08-25/centos_set_lan_07.png" alt="" /></p>
+
+<p>Далее нам нужно открыть файл с сетевыми настройками, стандартный текстовый редактор в CentOS 7 называется <strong>Vi</strong>. Вводим в консоль команду <strong>Vi ifcfg-ens192</strong> и откроем файл с сетевыми настройками.</p>
+
+<p><img src="/assets/img/2022-08-25/centos_set_lan_08.png" alt="" /></p>
+
+<div class="note">
+  <p>Названия файла может отличаться.</p>
+</div>
+
+<p>В данном файле нас интересуют несколько строк:</p>
+
+<ol>
+  <li>BOOTPROTO - способ назначения ip-адреса</li>
+  <li>IPADDR - ip-адрес</li>
+  <li>PREFIX - префикс подсети</li>
+  <li>GATEWAY - шлюз сети</li>
+  <li>DNS - dns-серверы</li>
+</ol>
+
+<p>В данный момент у интерфейса статические настройки, для изменения их на динамические, нужно изменить файл в соответствии со скриншотом и сохранить:</p>
+
+<p><img src="/assets/img/2022-08-25/centos_set_lan_09.png" alt="" /></p>
+
+<p>Для того чтобы настройки применились, нужно перезагрузить службу командой <strong>systemctl restart network</strong> и сразу проверим сетевые настройки, слово <strong>dynamic</strong> указывает, на то что настройки получены по dhcp.</p>
+
+<p><img src="/assets/img/2022-08-25/centos_set_lan_10.png" alt="" /></p>
+
+<p>Для настройки статического получения ip-адреса изменяем файл к предыдущему состоянию, указывая нужный ip-адрес, префикс, шлюз и dns-серверы:</p>
+
+<p><img src="/assets/img/2022-08-25/centos_set_lan_11.png" alt="" /></p>
+
+<p>И не забываем перезагрузить службу командой <strong>systemctl restart network</strong>.</p>
+
+</div>
+            <div class="container">
+    <ul class="list-group posts">
+        
+        
+    </ul>
+</div>
+        </main>
+
+        <footer>
+    <div class="container">
+        <div class="tags">
+            
+
+
+
+
+<a href="/tag/linux" target="_blank">
+    <nobr>linux</nobr>
+</a>
+
+
+
+<a href="/tag/centos-7" target="_blank">
+    <nobr>centos-7</nobr>
+</a>
+
+
+
+<a href="/tag/jekyll" target="_blank">
+    <nobr>jekyll</nobr>
+</a>
+
+
+
+<a href="/tag/github-pages" target="_blank">
+    <nobr>github-pages</nobr>
+</a>
+
+
+
+<a href="/tag/github" target="_blank">
+    <nobr>github</nobr>
+</a>
+
+
+
+<a href="/tag/blog" target="_blank">
+    <nobr>blog</nobr>
+</a>
+
+
+
+<a href="/tag/windows" target="_blank">
+    <nobr>windows</nobr>
+</a>
+
+
+
+<a href="/tag/vscode" target="_blank">
+    <nobr>vscode</nobr>
+</a>
+
+
+
+<a href="/tag/text-editors" target="_blank">
+    <nobr>text-editors</nobr>
+</a>
+
+
+
+<a href="/tag/macos" target="_blank">
+    <nobr>macos</nobr>
+</a>
+
+        </div>
+        <div class="links">
+            <div>
+                <h4>Социальные сети</h4>
+                <ul class="list-group socials">
+                    
+                    <li class="list-group-item">
+                        <a href="https://github.com/InFallen" target="_blank">
+                            <img src="/assets/img/icon-github.png" alt="icon GitHub">
+                        </a>
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <a href="https://vk.com/infallen" target="_blank">
+                            <img src="/assets/img/icon-vk.png" alt="icon VK">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4>Используемые ресурсы</h4>
+                <ul class="list-group resources">
+                    
+                    <li class="list-group-item">
+                        <a href="https://getbootstrap.com/" target="_blank">
+                            <img src="/assets/img/icon-bootstrap.png" alt="icon Bootstrap">
+                        </a> - инструменты для создания сайтов и веб-приложений.
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <a href="https://icons8.ru/" target="_blank">
+                            <img src="/assets/img/icon-icons8.png" alt="icon Icons8">
+                        </a> - иконки на любой случай.
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            
+            <span>Copyright &copy; infallen.space 2022.
+                Все
+                права защищены</span>
+        </div>
+    </div>
+</footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script scr="/assets/js/scripts.js"></script>
+
+</body>
+
+</html>

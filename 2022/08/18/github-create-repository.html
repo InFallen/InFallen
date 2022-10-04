@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Создание репозитория на GitHub</title>
+    <!-- CSS only -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+
+    
+    
+
+
+
+
+
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">InFallen.space</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Блог</a>
+                </li>
+
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Операционные системы</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/windows.html">Windows</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/windows-server.html">Windows Server</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/macos.html">MacOS</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/centos-7.html">CentOS 7</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Git и все что с ним связано</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/git/basics.html">Основы Git</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/git/github.html">GitHub</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Языки программирования и не только</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/javascript.html">JavaScript</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/python.html">Python</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/markdown.html">Markdown</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">CMS</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/cms/jekyll.html">Jekyll</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/cms/wordpress.html">WordPress</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">IDE, Тестовые редакторы</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/ide-text-editors/vscode.html">Visual Studio Code</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/ide-text-editors/phpstorm.html">PhpStorm</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Software</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/zabbix.html">Zabbix</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/nginx.html">Nginx</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/apache.html">Apache</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/about.html">Об авторе</a>
+                </li>
+
+                
+
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        </header>
+
+        <main>
+            <div class="container post">
+    <h1>Создание репозитория на GitHub</h1>
+    <span>
+        [
+        
+        
+        <a href="/tag/github" target="_blank"><code
+                class="highligher-rouge"><nobr>github</nobr></code>&nbsp;</a>
+        
+        ]
+    </span>
+    <p>18 Aug 2022 - Артем 'InFallen' Нагорный</p>
+
+
+    
+<hr />
+<p><strong>Репозиторий</strong> — это все файлы, находящиеся под контролем версий, вместе с историей их изменения и другой служебной информацией.
+Репозиторий можно создать, либо выбрав любую папку на компьютере, либо клонировав себе уже существующий репозиторий, например у работодателя.</p>
+
+<ol>
+  <li><a href="#registration">Регистрация на GitHub</a></li>
+  <li><a href="#enter">Вход на GitHub</a></li>
+  <li><a href="#create">Создание репозитория</a></li>
+  <li><a href="#clone">Клонирование репозитория</a></li>
+</ol>
+
+<h2 id="регистрация-на-github"><a name="registration"></a>Регистрация на GitHub</h2>
+
+<div class="note">
+  <p>Если у вас есть аккаунт на Github, то можете перейти к пункту - <a href="#enter">Вход на GitHub</a>.&lt;/div&gt;
+Для регистрации нужно пройти на сайт <a href="https://github.com/">GitHub</a> и нажать на кнопку Sing up в правом верхнем углу.</p>
+
+  <p><img src="/assets/img/2022-08-17/gh_create_rep_1.png" alt="" /></p>
+
+  <p>Далее помощник по регистрации у вас спросит данные для регистрации, такие email, пароль, имя пользователя, подписку на новости, подтверждение аккаунта и в конце требуется нажать на кнопку Create Account.</p>
+
+  <p><img src="/assets/img/2022-08-17/gh_create_rep_2.png" alt="" /></p>
+
+  <p>Далее вы перейдете на страницу, где нужно указать код, который отправлен на указанный email.</p>
+
+  <p><img src="/assets/img/2022-08-17/gh_create_rep_3.png" alt="" /></p>
+
+  <p>После ввода кода, загрузиться страница с опросником по персонализации аккаунта. Его можно пропустить нажав внизу экрана Skip personalization.</p>
+
+  <p><img src="/assets/img/2022-08-17/gh_create_rep_4.png" alt="" />
+После красивой заставки, попадаем в свой аккаунт GitHub и далее можно переходить к пункту - <a href="#create">Создание репозитория</a>.</p>
+
+  <h2 id="github"><a name="enter"></a>Вход на GitHub</h2>
+  <p>Если вы перешли к этому пункту, значит у вас уже есть учетная запись на Github.
+Для входа проходим на сайт <a href="https://github.com/">GitHub</a> и нажимаем на кнопку Sign in в правом верхнем углу.</p>
+
+  <p><img src="/assets/img/2022-08-17/gh_create_rep_5.png" alt="" /></p>
+
+  <p>На следующей странице вводи логин или почтовый адрес, указанный при регистрации, пароль и нажимаем на кнопку Sing in.</p>
+
+  <p><img src="/assets/img/2022-08-17/gh_create_rep_6.png" alt="" /></p>
+
+  <p>После входа, попадаем в свой аккаунт и далее можно переходить к пункту - <a href="#create">Создание репозитория</a>.</p>
+
+  <h2 id="section"><a name="create"></a>Создание репозитория</h2>
+
+  <p>После <a href="#create">создания</a> или <a href="#enter">входа</a> в аккаунт GitHub попадаем на личную страницу, на которой нужно нажать в правом верхнем углу + и выбрать New repository.</p>
+
+  <p><img src="/assets/img/2022-08-17/gh_create_rep_7.png" alt="" /></p>
+
+  <p>Попадаем на страницу создания нового репозитория. Поля доступные для заполнения или выбора:</p>
+
+  <ul>
+    <li><strong>Repository name</strong> - название репозитория, единственное обязательное поле.</li>
+    <li><strong>Description</strong> - описание проекта в репозитории.</li>
+    <li><strong>Public - Private</strong> - выбор, приватности репозитория.</li>
+    <li><strong>add a README file</strong> - создание README файла, в котором можно сделать описание проекта(поддерживает язык разметки Markdown).</li>
+    <li><strong>Add .gitignore</strong> - добавить файл .gitignore c выбранными шаблонами.</li>
+    <li><strong>Choose license</strong> - выбрать лицензию проекта.</li>
+  </ul>
+
+  <p>После ввода имени репозитория и осуществления остальных настроек, нажимаем внизу страницы на кнопку Create repository</p>
+
+  <p><img src="/assets/img/2022-08-17/gh_create_rep_8.png" alt="" /></p>
+
+  <p>На этом создание репозитория окончено и можно переходить к <a href="#clone">клонированию репозитория</a> в локальную директорию компьютера.</p>
+
+  <h2 id="section-1"><a name="clone"></a>Клонирование репозитория</h2>
+
+  <p>Для клонирования репозитория я использую сразу встроенный терминал в Visual Studio code. Инструкцию по установке можно найти <a href="/2022/08/19/vscode-install.html">тут</a>. Запускаем VSCode и нажимаем <strong>Clone Git Repository…</strong></p>
+
+  <p><img src="/assets/img/2022-08-17/gh_create_rep_9.png" alt="" /></p>
+
+  <p>У вас откроется палитра команд с запросом вставить ссылку на репозиторий для клонирования.</p>
+
+  <p><img src="/assets/img/2022-08-17/gh_create_rep_10.png" alt="" /></p>
+
+  <p>Переходим на страницу нашего репозитория и нажимаем на кнопку копировать.</p>
+
+  <p><img src="/assets/img/2022-08-17/gh_create_rep_11.png" alt="" /></p>
+
+  <p>Скопированную ссылку вставляем в палитру команд и нажимаем Enter</p>
+
+  <p><img src="/assets/img/2022-08-17/gh_create_rep_12.png" alt="" /></p>
+
+  <p>Далее в появившемся окне выбрать директорию, где будут храниться файлы и подтвердить копирование.
+На этом клонирование репозитория закончено.</p>
+
+  <p>В данной статье мы разобрались, как создать аккаунт на Github, войти в него, создать репозиторий, и клонировать репозиторий в локальное хранилище компьютера.</p>
+</div>
+
+</div>
+            <div class="container">
+    <ul class="list-group posts">
+        
+        
+    </ul>
+</div>
+        </main>
+
+        <footer>
+    <div class="container">
+        <div class="tags">
+            
+
+
+
+
+<a href="/tag/linux" target="_blank">
+    <nobr>linux</nobr>
+</a>
+
+
+
+<a href="/tag/centos-7" target="_blank">
+    <nobr>centos-7</nobr>
+</a>
+
+
+
+<a href="/tag/jekyll" target="_blank">
+    <nobr>jekyll</nobr>
+</a>
+
+
+
+<a href="/tag/github-pages" target="_blank">
+    <nobr>github-pages</nobr>
+</a>
+
+
+
+<a href="/tag/github" target="_blank">
+    <nobr>github</nobr>
+</a>
+
+
+
+<a href="/tag/blog" target="_blank">
+    <nobr>blog</nobr>
+</a>
+
+
+
+<a href="/tag/windows" target="_blank">
+    <nobr>windows</nobr>
+</a>
+
+
+
+<a href="/tag/vscode" target="_blank">
+    <nobr>vscode</nobr>
+</a>
+
+
+
+<a href="/tag/text-editors" target="_blank">
+    <nobr>text-editors</nobr>
+</a>
+
+
+
+<a href="/tag/macos" target="_blank">
+    <nobr>macos</nobr>
+</a>
+
+        </div>
+        <div class="links">
+            <div>
+                <h4>Социальные сети</h4>
+                <ul class="list-group socials">
+                    
+                    <li class="list-group-item">
+                        <a href="https://github.com/InFallen" target="_blank">
+                            <img src="/assets/img/icon-github.png" alt="icon GitHub">
+                        </a>
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <a href="https://vk.com/infallen" target="_blank">
+                            <img src="/assets/img/icon-vk.png" alt="icon VK">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4>Используемые ресурсы</h4>
+                <ul class="list-group resources">
+                    
+                    <li class="list-group-item">
+                        <a href="https://getbootstrap.com/" target="_blank">
+                            <img src="/assets/img/icon-bootstrap.png" alt="icon Bootstrap">
+                        </a> - инструменты для создания сайтов и веб-приложений.
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <a href="https://icons8.ru/" target="_blank">
+                            <img src="/assets/img/icon-icons8.png" alt="icon Icons8">
+                        </a> - иконки на любой случай.
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            
+            <span>Copyright &copy; infallen.space 2022.
+                Все
+                права защищены</span>
+        </div>
+    </div>
+</footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script scr="/assets/js/scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jekyll - GitHub Actions</title>
+    <!-- CSS only -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+
+    
+    
+
+
+
+
+
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">InFallen.space</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Блог</a>
+                </li>
+
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Операционные системы</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/windows.html">Windows</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/windows-server.html">Windows Server</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/macos.html">MacOS</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/centos-7.html">CentOS 7</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Git и все что с ним связано</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/git/basics.html">Основы Git</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/git/github.html">GitHub</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Языки программирования и не только</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/javascript.html">JavaScript</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/python.html">Python</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/markdown.html">Markdown</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">CMS</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/cms/jekyll.html">Jekyll</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/cms/wordpress.html">WordPress</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">IDE, Тестовые редакторы</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/ide-text-editors/vscode.html">Visual Studio Code</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/ide-text-editors/phpstorm.html">PhpStorm</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Software</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/zabbix.html">Zabbix</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/nginx.html">Nginx</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/apache.html">Apache</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/about.html">Об авторе</a>
+                </li>
+
+                
+
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        </header>
+
+        <main>
+            <div class="container post">
+    <h1>Jekyll - GitHub Actions</h1>
+    <span>
+        [
+        
+        
+        <a href="/tag/jekyll" target="_blank"><code
+                class="highligher-rouge"><nobr>jekyll</nobr></code>&nbsp;</a>
+        
+        
+        <a href="/tag/blog" target="_blank"><code
+                class="highligher-rouge"><nobr>blog</nobr></code>&nbsp;</a>
+        
+        
+        <a href="/tag/github" target="_blank"><code
+                class="highligher-rouge"><nobr>github</nobr></code>&nbsp;</a>
+        
+        
+        <a href="/tag/github-pages" target="_blank"><code
+                class="highligher-rouge"><nobr>github-pages</nobr></code>&nbsp;</a>
+        
+        ]
+    </span>
+    <p>02 Aug 2022 - Артем 'InFallen' Нагорный</p>
+
+
+    
+<hr />
+<p>При создании сайта Jekyll с помощью GitHub Pages стандартный процесс ограничен по соображениям безопасности и для упрощения настройки сайта. Для большего контроля над сборкой и размещения сайта с помощью GitHub Pages вы можете использовать GitHub Actions.</p>
+
+<h2 id="преимущества-использования">Преимущества использования</h2>
+
+<h3 id="контроль-над-gemset">Контроль над gemset</h3>
+<ul>
+  <li><strong>Версии Jekyll</strong> - вместо использования текущей включенной версии 3.9.0, можно использовать любую версию Jekyll . Например 4.2.2, или указать сразу на репозиторий.</li>
+  <li><strong>Плагины</strong> - можно использовать любые плагины Jekyll, независимо от того, находятся ли они в списке поддерживаемых версий, даже файлы *.rb, размещенные в каталоге _plugins сайта.</li>
+  <li><strong>Темы</strong> - хотя использование пользовательской темы возможно без GitHub Actions, но так это проще.</li>
+</ul>
+
+<h3 id="управление-рабочим-процессом">Управление рабочим процессом</h3>
+<ul>
+  <li><strong>Кастомизация</strong> - создав файл рабочего процесса для запуска действий, можно указать пользовательские шаги сборки, использовать переменные среды.</li>
+  <li><strong>Логирование</strong> - журнал сборки виден, и его можно настроить, чтобы он был подробным, поэтому гораздо проще отлаживать ошибки с помощью GitHub Actions.</li>
+</ul>
+
+<h2 id="настройка-рабочей-области">Настройка рабочей области</h2>
+
+<p>Первое и главное требование — проект Jekyll, размещенный на GitHub.</p>
+
+<p>Далее будет рассмотрена сборка только из основной ветки <strong>main</strong>. Поэтому убеждаемся, что работаем в основной ветке <strong>main</strong>.</p>
+
+<p>Когда GitHub Action создаст ваш сайт, содержимое целевого каталога будет автоматически отправлено в ветку gh-pages с фиксацией, готовой к использованию для обслуживания.</p>
+
+<p>Действие, которое здесь используется, будет создавать (или сбрасывать существующую) ветку gh-pages при каждом успешном развертывании.
+Итак, если есть существующая ветка gh-pages, которая используется для развертывания рабочей сборки, убедитесь, что сделана резервная копия содержимого в другой ветке, чтобы при необходимости можно было легко выполнить откат.</p>
+
+<p>Тестовый сайт у нас будет состоять из 3-х файлов: <strong>_сonfig.yml</strong>, <strong>index.md</strong> и <strong>Gemfile</strong></p>
+
+<figure class="highlight">
+  <pre><code class="language-yaml" data-lang="yaml"><span class="c1"># _config.yml</span>
+
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Jekyll</span><span class="nv"> </span><span class="s">Actions</span><span class="nv"> </span><span class="s">Demo"</span></code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- index.md --&gt;</span>
+---
+---
+
+Welcome to My Home Page
+
+{% assign date = '2022-08-06T10:20:00Z' %}
+
+- Начальная дата - {{ date }}
+- С временным фильтром - {{ date | timeago }}</code></pre>
+</figure>
+
+<figure class="highlight">
+  <pre><code class="language-html" data-lang="html"># Gemfile
+
+source 'https://rubygems.org'
+
+gem 'jekyll', '~&gt; 4.2'
+gem "webrick", "~&gt; 1.7"
+
+group :jekyll_plugins do
+    gem 'jekyll-timeago', '~&gt; 0.13.1'
+end</code></pre>
+</figure>
+
+<p>В демо используется Jekyll 4 и плагин. Данный плагин покажет нам, сколько времени прошло с указанной даты до сегодняшнего дня.</p>
+
+<h2 id="настройка-github-actions">Настройка GitHub Actions</h2>
+
+<p>GitHub Actions регистрируется для репозитория с помощью файла YAML в директории <strong>.github/workflows</strong>.</p>
+
+<p>Создадим файл рабочего процесса с названием <strong>github-pages.yml</strong> использую интерфейс GitHub или в ручную в каталоге рабочих процессов. И запишем в него:</p>
+
+<figure class="highlight">
+  <pre><code class="language-yaml" data-lang="yaml"><span class="na">name</span><span class="pi">:</span> <span class="s">Build and deploy Jekyll site to GitHub Pages</span>
+
+<span class="na">on</span><span class="pi">:</span>
+    <span class="na">push</span><span class="pi">:</span>
+        <span class="na">branches</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="s">main</span> <span class="c1"># или master до Октября 2020</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+    <span class="na">github-pages</span><span class="pi">:</span>
+        <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+        <span class="na">steps</span><span class="pi">:</span>
+            <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+            <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/cache@v2</span>
+                <span class="s">with</span><span class="err">:</span>
+                    <span class="na">path</span><span class="pi">:</span> <span class="s">vendor/bundle</span>
+                    <span class="na">key</span><span class="pi">:</span> <span class="s">${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}</span>
+                    <span class="na">restore-keys</span><span class="pi">:</span> <span class="pi">|</span>
+                        <span class="s">${{ runner.os }}-gems-</span>
+            <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">helaili/jekyll-action@2.4.0</span>    <span class="c1"># Выбрать любое из Jekyll Actions</span>
+                <span class="na">with</span><span class="pi">:</span>                              <span class="c1"># Некоторые относительные входы действия</span>
+                    <span class="na">token</span><span class="pi">:</span> <span class="s">${{ secrets.GITHUB_TOKEN }}</span></code></pre>
+</figure>
+
+<p>Данный рабочий процесс можно описать следующим образом:</p>
+
+<ul>
+  <li>Запуск сборки, используя условие <strong>on.push</strong> только для ветки <strong>main</strong> - это предотвращает перезапись ветки gh-pages GitHub Actions при любых отправках функциональной ветки.</li>
+  <li>Имя задания соответствует нашему имени файла YAML: <strong>github-pages</strong>.</li>
+  <li>Действие <strong>checkout</strong> заботится о клонировании вашего репозитория.</li>
+  <li><strong>Кэширование</strong> — это оптимизация, позволяющая избежать извлечения и установки gems при каждой сборке.</li>
+  <li>Указано выбранное нами действие и номер его версии, это помогает обрабатывать сборку и развертывание.</li>
+  <li>Устанавливается ссылка на секретную переменную среды для использования действия. <strong>GITHUB_TOKEN</strong> — это секретный токен, который автоматически инициализируется в начале каждого запуска рабочего процесса.</li>
+</ul>
+
+<p>Вместо использования условия <strong>on.push</strong>, можно запускать сборку по расписанию, используя параметр on.schedule. Например, здесь запуск сборки происходит в полночь, используя синтаксис cron:</p>
+
+<figure class="highlight">
+  <pre><code class="language-cron" data-lang="cron">on:
+    schedule:
+        - cron: "0 0 * * *"</code></pre>
+</figure>
+
+<p>Обратите внимание, что эта строка должна быть заключена в кавычки, чтобы предотвратить неправильную оценку звездочек.</p>
+
+<h3 id="предоставление-разрешений">Предоставление разрешений</h3>
+
+<p>В начале каждого запуска рабочего процесса GitHub автоматически создает уникальный <strong>GITHUB_TOKEN</strong> для использования рабочего процесса. Этот <strong>GITHUB_TOKEN</strong> можно использовать для аутентификации в рабочем процессе.</p>
+
+<p>Если нужен токен, для которого требуются разрешения, недоступные в GITHUB_TOKEN, можно создать токен личного доступа (PAT) и установить его в качестве секрета в репозитории, чтобы это действие было отправлено в ветку gh-pages.</p>
+
+<ol>
+  <li>В профиле GitHub в разделе «Настройки разработчика» переходим в раздел «Токены личного доступа».</li>
+  <li>Создаем токен. Даем ему имя, например <strong>«GitHub Actions»</strong>, и убеждаемся, что у него есть        разрешения на public_repos (или всю область репозитория для частного репозитория) — необходимые для того, чтобы действие было зафиксировано в ветке <strong>gh-pages</strong>.</li>
+  <li>Копируем значение токена.</li>
+  <li>Перейдите в настройки репозитория, а затем на вкладку «Secrets».</li>
+  <li>Создайте токен с именем <strong>YOUR_CUSTOM_TOKEN</strong>(важно). Присвойте ему значение, используя значение, скопированное выше.</li>
+</ol>
+
+<h2 id="сборка-и-развертывание">Сборка и развертывание</h2>
+
+<p>При отправке любых локальных изменений в ветку <strong>main</strong> действие будет запущено, и сборка начнется.</p>
+
+<p>Чтобы следить за ходом выполнения и видеть любые ошибки сборки, проверьте состояние сборки, используя один из следующих подходов:</p>
+
+<ul>
+  <li>
+    <p><strong>Просмотр коммитов</strong><br />
+  Перейдите к просмотру репозитория в GitHub. Под самой последним коммитом(вверху) будет виден символ состояния рядом с сообщением о фиксации в виде галочки или Х. Нужно навести на него курсор и щелкнуть для просмотра подробностей.</p>
+  </li>
+  <li>
+    <p><strong>Вкладка “Actions”</strong><br />
+  Переходим в репозиторий во вкладку “Actions” и выбираем вкладку рабочего процесса Jekyll.</p>
+  </li>
+</ul>
+
+</div>
+            <div class="container">
+    <ul class="list-group posts">
+        
+        
+    </ul>
+</div>
+        </main>
+
+        <footer>
+    <div class="container">
+        <div class="tags">
+            
+
+
+
+
+<a href="/tag/linux" target="_blank">
+    <nobr>linux</nobr>
+</a>
+
+
+
+<a href="/tag/centos-7" target="_blank">
+    <nobr>centos-7</nobr>
+</a>
+
+
+
+<a href="/tag/jekyll" target="_blank">
+    <nobr>jekyll</nobr>
+</a>
+
+
+
+<a href="/tag/github-pages" target="_blank">
+    <nobr>github-pages</nobr>
+</a>
+
+
+
+<a href="/tag/github" target="_blank">
+    <nobr>github</nobr>
+</a>
+
+
+
+<a href="/tag/blog" target="_blank">
+    <nobr>blog</nobr>
+</a>
+
+
+
+<a href="/tag/windows" target="_blank">
+    <nobr>windows</nobr>
+</a>
+
+
+
+<a href="/tag/vscode" target="_blank">
+    <nobr>vscode</nobr>
+</a>
+
+
+
+<a href="/tag/text-editors" target="_blank">
+    <nobr>text-editors</nobr>
+</a>
+
+
+
+<a href="/tag/macos" target="_blank">
+    <nobr>macos</nobr>
+</a>
+
+        </div>
+        <div class="links">
+            <div>
+                <h4>Социальные сети</h4>
+                <ul class="list-group socials">
+                    
+                    <li class="list-group-item">
+                        <a href="https://github.com/InFallen" target="_blank">
+                            <img src="/assets/img/icon-github.png" alt="icon GitHub">
+                        </a>
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <a href="https://vk.com/infallen" target="_blank">
+                            <img src="/assets/img/icon-vk.png" alt="icon VK">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4>Используемые ресурсы</h4>
+                <ul class="list-group resources">
+                    
+                    <li class="list-group-item">
+                        <a href="https://getbootstrap.com/" target="_blank">
+                            <img src="/assets/img/icon-bootstrap.png" alt="icon Bootstrap">
+                        </a> - инструменты для создания сайтов и веб-приложений.
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <a href="https://icons8.ru/" target="_blank">
+                            <img src="/assets/img/icon-icons8.png" alt="icon Icons8">
+                        </a> - иконки на любой случай.
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            
+            <span>Copyright &copy; infallen.space 2022.
+                Все
+                права защищены</span>
+        </div>
+    </div>
+</footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script scr="/assets/js/scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jekyll - Includes(Включения)</title>
+    <!-- CSS only -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+
+    
+    
+
+
+
+
+
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">InFallen.space</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Блог</a>
+                </li>
+
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Операционные системы</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/windows.html">Windows</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/windows-server.html">Windows Server</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/macos.html">MacOS</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/centos-7.html">CentOS 7</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Git и все что с ним связано</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/git/basics.html">Основы Git</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/git/github.html">GitHub</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Языки программирования и не только</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/javascript.html">JavaScript</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/python.html">Python</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/markdown.html">Markdown</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">CMS</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/cms/jekyll.html">Jekyll</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/cms/wordpress.html">WordPress</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">IDE, Тестовые редакторы</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/ide-text-editors/vscode.html">Visual Studio Code</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/ide-text-editors/phpstorm.html">PhpStorm</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Software</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/zabbix.html">Zabbix</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/nginx.html">Nginx</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/apache.html">Apache</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/about.html">Об авторе</a>
+                </li>
+
+                
+
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        </header>
+
+        <main>
+            <h1 id="includesвключения">Includes(Включения)</h1>
+
+<p>Сайт собирается вместе, но нет никакой навигации между страницами. Так как навигация должна быть на каждой странице, то добавление ее в макет - это правильный шаг.</p>
+
+<p>Но вместо того чтобы добавлять ее туда, рассмотрим такую возможность Jekyll, как <strong>включения</strong>.</p>
+
+<p>Тег <strong>include</strong> позволет включать контент из другого файла, находящегося в папке <strong>_includes</strong>. Включения полезны тем, что пользователь имеет единый источник исходного кода, который повторяется по всему сайту.</p>
+
+<p>Так как исходный код навигации достаточно сложный, его лучше переместить во включение.</p>
+
+<h2 id="использование-включения">Использование включения</h2>
+
+<p>Создадим папку в корневом каталоге папку <em>_includes</em> и в нем файл <strong>navigation.html</strong>. В созданный файл поместим фрагмент кода:</p>
+
+<figure class="highlight">
+  <pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/about.html"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre>
+</figure>
+
+<p>Теперь используем тег <strong>include</strong> в нашем макете <strong>_layouts/default.html</strong>:</p>
+
+<figure class="highlight">
+  <pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;title&gt;</span>{{ page.title }}<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        {% include navigation.html %}
+        {{ content }}
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre>
+</figure>
+
+<p>Теперь откроем <a href="http://localhost:4000">http://localhost:4000</a> в браузере и попробуем переключиться между страницами.</p>
+
+<h2 id="выделение-текущей-страницы">Выделение текущей страницы</h2>
+
+<p>Теперь добавим выделение текущей страницы в навигации.</p>
+
+<p><strong>_includes/navigation.html</strong> должен знать URL-адрес страницы, на которую он вставлен, чтобы добавить стиль. В Jekyll доступны полезные переменные, одна из которых — <strong>page.url</strong>.</p>
+
+<p>Используем <strong>page.url</strong> для проверки, является ли каждая ссылка текущей страницей, и покрасим ее в красный цвет, если это так:</p>
+
+<figure class="highlight">
+  <pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="err">{%</span> <span class="na">if</span> <span class="na">page.url =</span><span class="s">=</span> <span class="err">"/"%}</span> <span class="na">style=</span><span class="s">"color: red"</span> <span class="err">{%</span> <span class="na">endif</span> <span class="err">%}</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/about.html"</span> <span class="err">{%</span> <span class="na">if</span> <span class="na">page.url =</span><span class="s">=</span> <span class="err">"/</span><span class="na">about.html</span><span class="err">"</span> <span class="err">%}</span><span class="na">style=</span><span class="s">"color: red;"</span><span class="err">{%</span> <span class="na">endif</span> <span class="err">%}</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre>
+</figure>
+
+<p>Взглянем на <a href="http://localhost:4000">http://localhost:4000</a> и увидим красную ссылку на текущую страницу.</p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="prev-next-button">
+    
+    <span class="button prev">
+        <a href="/jekyll/stepbystep/5-layouts">
+            <img src="/assets/img/arrow.png">
+        </a>
+    </span>
+    
+    
+    <span class="button next">
+        <a href="/jekyll/stepbystep/7-data">
+            <img src="/assets/img/arrow.png">
+        </a>
+    </span>
+    
+</div>
+
+
+
+
+
+
+<div class="step">
+    <a href="/jekyll/stepbystep/1-install">Установка</a>
+</div>
+
+<div class="step">
+    <a href="/jekyll/stepbystep/2-create">Создание сайта</a>
+</div>
+
+<div class="step">
+    <a href="/jekyll/stepbystep/3-liquid">Liquid</a>
+</div>
+
+<div class="step">
+    <a href="/jekyll/stepbystep/4-front-matter">Front-Matter</a>
+</div>
+
+<div class="step">
+    <a href="/jekyll/stepbystep/5-layouts">Макеты</a>
+</div>
+
+<div class="step">
+    <a href="/jekyll/stepbystep/6-includes">Includes(Включения)</a>
+</div>
+
+<div class="step">
+    <a href="/jekyll/stepbystep/7-data">Файлы данных</a>
+</div>
+
+<div class="step">
+    <a href="/jekyll/stepbystep/8-assets">Ресурсы</a>
+</div>
+
+<div class="step">
+    <a href="/jekyll/stepbystep/9-blog">Ведение блога</a>
+</div>
+
+<div class="step">
+    <a href="/jekyll/stepbystep/10-collections">Коллекции</a>
+</div>
+
+<div class="step">
+    <a href="/jekyll/stepbystep/11-deployment">Развертывание</a>
+</div>
+
+            <div class="container">
+    <ul class="list-group posts">
+        
+        
+    </ul>
+</div>
+        </main>
+
+        <footer>
+    <div class="container">
+        <div class="tags">
+            
+
+
+
+
+<a href="/tag/linux" target="_blank">
+    <nobr>linux</nobr>
+</a>
+
+
+
+<a href="/tag/centos-7" target="_blank">
+    <nobr>centos-7</nobr>
+</a>
+
+
+
+<a href="/tag/jekyll" target="_blank">
+    <nobr>jekyll</nobr>
+</a>
+
+
+
+<a href="/tag/github-pages" target="_blank">
+    <nobr>github-pages</nobr>
+</a>
+
+
+
+<a href="/tag/github" target="_blank">
+    <nobr>github</nobr>
+</a>
+
+
+
+<a href="/tag/blog" target="_blank">
+    <nobr>blog</nobr>
+</a>
+
+
+
+<a href="/tag/windows" target="_blank">
+    <nobr>windows</nobr>
+</a>
+
+
+
+<a href="/tag/vscode" target="_blank">
+    <nobr>vscode</nobr>
+</a>
+
+
+
+<a href="/tag/text-editors" target="_blank">
+    <nobr>text-editors</nobr>
+</a>
+
+
+
+<a href="/tag/macos" target="_blank">
+    <nobr>macos</nobr>
+</a>
+
+        </div>
+        <div class="links">
+            <div>
+                <h4>Социальные сети</h4>
+                <ul class="list-group socials">
+                    
+                    <li class="list-group-item">
+                        <a href="https://github.com/InFallen" target="_blank">
+                            <img src="/assets/img/icon-github.png" alt="icon GitHub">
+                        </a>
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <a href="https://vk.com/infallen" target="_blank">
+                            <img src="/assets/img/icon-vk.png" alt="icon VK">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4>Используемые ресурсы</h4>
+                <ul class="list-group resources">
+                    
+                    <li class="list-group-item">
+                        <a href="https://getbootstrap.com/" target="_blank">
+                            <img src="/assets/img/icon-bootstrap.png" alt="icon Bootstrap">
+                        </a> - инструменты для создания сайтов и веб-приложений.
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <a href="https://icons8.ru/" target="_blank">
+                            <img src="/assets/img/icon-icons8.png" alt="icon Icons8">
+                        </a> - иконки на любой случай.
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            
+            <span>Copyright &copy; infallen.space 2022.
+                Все
+                права защищены</span>
+        </div>
+    </div>
+</footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script scr="/assets/js/scripts.js"></script>
+
+</body>
+
+</html>

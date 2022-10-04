@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jekyll Tags на GitHub Pages</title>
+    <!-- CSS only -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png">
+
+    
+    
+
+
+
+
+
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">InFallen.space</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Блог</a>
+                </li>
+
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Операционные системы</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/windows.html">Windows</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/windows-server.html">Windows Server</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/macos.html">MacOS</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/os/centos-7.html">CentOS 7</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Git и все что с ним связано</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/git/basics.html">Основы Git</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/git/github.html">GitHub</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Языки программирования и не только</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/javascript.html">JavaScript</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/python.html">Python</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/lang/markdown.html">Markdown</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">CMS</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/cms/jekyll.html">Jekyll</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/cms/wordpress.html">WordPress</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">IDE, Тестовые редакторы</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/ide-text-editors/vscode.html">Visual Studio Code</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/ide-text-editors/phpstorm.html">PhpStorm</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Software</a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/zabbix.html">Zabbix</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/nginx.html">Nginx</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+
+                        <li class="nav-item">
+                            <a class="dropdown-item" aria-current="page" href="/software/apache.html">Apache</a>
+                        </li>
+                        <li>
+                            <hr class="divider">
+                        </li>
+                        
+                    </ul>
+
+                </li>
+                
+
+                
+
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/about.html">Об авторе</a>
+                </li>
+
+                
+
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        </header>
+
+        <main>
+            <div class="container post">
+    <h1>Jekyll Tags на GitHub Pages</h1>
+    <span>
+        [
+        
+        
+        <a href="/tag/jekyll" target="_blank"><code
+                class="highligher-rouge"><nobr>jekyll</nobr></code>&nbsp;</a>
+        
+        
+        <a href="/tag/blog" target="_blank"><code
+                class="highligher-rouge"><nobr>blog</nobr></code>&nbsp;</a>
+        
+        
+        <a href="/tag/github-pages" target="_blank"><code
+                class="highligher-rouge"><nobr>github-pages</nobr></code>&nbsp;</a>
+        
+        ]
+    </span>
+    <p>15 Aug 2022 - Артем 'InFallen' Нагорный</p>
+
+
+    
+<hr />
+<p>Github Pages по умолчанию не поддерживает плагин <a href="https://github.com/pattex/jekyll-tagging">jekyll-tagging</a> для работы с тегами в Jekyll.</p>
+
+<p>Для внедрения тегов можно использовать данное пошаговое руководство.
+Для демонстрации, данный механизм используется на данном сайте.</p>
+
+<h2 id="добавляем-теги-к-постам">Добавляем теги к постам</h2>
+
+<p>В каждом файле поста, нужно добавить теги в раздел front matter. Например для данного поста это выглядит вот так:</p>
+
+<figure class="highlight">
+  <pre><code class="language-markdown" data-lang="markdown"><span class="nn">---</span>
+<span class="na">chapter</span><span class="pi">:</span> <span class="s">jekyll</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Jekyll Tags на GitHub Pages</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="s">jekyll blog github-pages</span>
+<span class="nn">---</span></code></pre>
+</figure>
+
+<p>В списке <strong>tags</strong> каждый тег отделяется пробелом и рекомендуется использовать только строчные буквы для имен.</p>
+
+<h2 id="сбор-тегов-со-всех-постов">Сбор тегов со всех постов</h2>
+
+<p>Следующим шагом будет создание включения со списком всех тегов. Для этого создадим файл с именем <strong>collecttags.html</strong> в папке <strong>_includes</strong> и добавим туда liquid-скрипт:</p>
+
+<figure class="highlight">
+  <pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">rawtags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">post</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">site.posts</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">ttags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">tags</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">join</span><span class="p">:</span><span class="s1">'|'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="s1">'|'</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">rawtags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">rawtags</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="nv">ttags</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">rawtags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">rawtags</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">split</span><span class="p">:</span><span class="s1">'|'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">sort</span><span class="w"> </span><span class="p">%}</span>
+
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">tag</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">rawtags</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">tag</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">""</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">tags</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">""</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">tag</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">split</span><span class="p">:</span><span class="s1">'|'</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="kr">unless</span><span class="w"> </span><span class="nv">tags</span><span class="w"> </span><span class="ow">contains</span><span class="w"> </span><span class="nv">tag</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">tags</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">join</span><span class="p">:</span><span class="s1">'|'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="s1">'|'</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="nv">tag</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">split</span><span class="p">:</span><span class="s1">'|'</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="kr">endunless</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span></code></pre>
+</figure>
+
+<p>Данный скрипт создает список <strong>site.tags</strong>.</p>
+
+<h2 id="сбор-тегов">Сбор тегов</h2>
+
+<p>Для сбора тегов нужно включить <strong>collecttags.html</strong> где-то, чтобы он выполнялся до использования списка <strong>site.tags</strong>.</p>
+
+<p>Как варианты, можно добавить либо в тег <strong>&lt;head&gt;</strong> в шаблоне используемом по умолчанию, либо во включение <strong>head.html</strong>, в котором уже определяется вся конструкция тега <strong>&lt;head&gt;</strong>. Добавим в выбранное место следующий код:</p>
+
+<figure class="highlight">
+  <pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">tags</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">""</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>collecttags.html<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span></code></pre>
+</figure>
+
+<p>Это единоразово запустит скрипт из <strong>collecttags.html</strong>.</p>
+
+<h2 id="вывод-тегов-в-посте">Вывод тегов в посте</h2>
+
+<p>Для вывода тегов в посте, добавим в макет <strong>_layout/post.html</strong> следующий код:</p>
+
+<figure class="highlight">
+  <pre><code class="language-html" data-lang="html"><span class="nt">&lt;span&gt;</span>[
+  {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/tag/{{ tag_name }}"</span><span class="nt">&gt;&lt;code</span> <span class="na">class=</span><span class="s">"highligher-rouge"</span><span class="nt">&gt;&lt;nobr&gt;</span>{{ tag_name }}<span class="nt">&lt;/nobr&gt;&lt;/code&gt;</span><span class="ni">&amp;nbsp;</span><span class="nt">&lt;/a&gt;</span>
+  {% endfor %}
+]<span class="nt">&lt;/span&gt;</span></code></pre>
+</figure>
+
+<p>Обратите внимание на ссылку <strong>/tag/tag_name</strong>. Ее создание будет описано дальше.</p>
+
+<h2 id="создание-страницы-тега">Создание страницы тега.</h2>
+
+<p>Теперь нужно создать страницы для каждого из тегов, на которые будете переходить после нажатия на них. Например: <a href="/tag/github-pages">github-pages</a> &lt;- кликните.</p>
+
+<h3 id="определение-макета-для-страницы-тега">Определение макета для страницы тега.</h3>
+
+<p>Страница тегов должна быть сгенерирована для всех тегов, потому что для ее создания нельзя использовать плагин, который не работает на <strong>GitHub-Pages</strong>. Поэтому это будет просто обычная страница Jekyll с собственным макетом.</p>
+
+<p>Создадим новый html-файл <strong>_layout/tagpage.html</strong>:</p>
+
+<figure class="highlight">
+  <pre><code class="language-html" data-lang="html">---
+layout: default
+---
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h1&gt;</span>Tag: {{ page.tag }}<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+{% for post in site.tags[page.tag] %}
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{ post.url }}"</span><span class="nt">&gt;</span>{{ post.title }}<span class="nt">&lt;/a&gt;</span> ({{ post.date | date_to_string }})<span class="nt">&lt;br&gt;</span>
+    {{ post.content | remove_first: post.excerpt | strip_html | truncatewords: 30 }}
+  <span class="nt">&lt;/li&gt;</span>
+{% endfor %}
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;hr&gt;</span></code></pre>
+</figure>
+
+<p>Это будет формат всех страниц тегов. Он отображает все сообщения с текущим тегом, включая заголовок сообщения, дату и первые 30 слов первого абзаца.</p>
+
+<h3 id="инициирование-создания-страниц-тегов">Инициирование создания страниц тегов</h3>
+
+<p>Чтобы движок GitHub Jekyll мог создать страницы тегов, нужны файлы <strong>markdown</strong>, каждый из которых будет указывать на конкретный тег и формат страницы.</p>
+
+<p>Создаем в корне сайта папку <strong>tag</strong> и создаем в ней для примера файл <strong>github-pages.md</strong> с таким содержимым:</p>
+
+<figure class="highlight">
+  <pre><code class="language-markdown" data-lang="markdown"><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">tagpage</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Tag:</span><span class="nv"> </span><span class="s">github-pages"</span>
+<span class="na">tag</span><span class="pi">:</span> <span class="s">github-pages</span>
+<span class="nn">---</span></code></pre>
+</figure>
+
+<p>Данный код запускает создание страницы в директории <strong>site_dir/tag/github-pages</strong> c макетом <strong>_layout/tagpage.html</strong> и параметров <strong>page.tag = github-pages</strong>.</p>
+
+<h2 id="отображение-облака-тегов-необязательно">Отображение облака тегов (необязательно)</h2>
+
+<p>Облако тегов может быть таким: <a href="/tag/github-pages/">github-pages</a> &lt;- кликните(нижняя часть). При использовании данного метода, можно будет изменить размер текста тега в зависимости от количества постов, связанным с ним или отображать теги в порядке подсчета ссылок.</p>
+
+<p>Создадим новое включение <strong>_includes/archive.html</strong>:</p>
+
+<figure class="highlight">
+  <pre><code class="language-html" data-lang="html"><span class="nt">&lt;h2&gt;</span>Archive<span class="nt">&lt;/h2&gt;</span>
+{% capture temptags %}
+  {% for tag in site.tags %}
+    {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
+{% for temptag in sortedtemptags %}
+  {% assign tagitems = temptag | split: '#' %}
+  {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/tag/{{ tagname }}"</span><span class="nt">&gt;&lt;code</span> <span class="na">class=</span><span class="s">"highligher-rouge"</span><span class="nt">&gt;&lt;nobr&gt;</span>{{ tagname }}<span class="nt">&lt;/nobr&gt;&lt;/code&gt;&lt;/a&gt;</span>
+{% endfor %}</code></pre>
+</figure>
+
+<p>Данный скрипт извлекает <strong>site.tags</strong> и сортирует их по размеру постов, на которые он ссылается.
+Отсортированный список находится в <strong>sortedtemptags</strong>.</p>
+
+<p>Для отображения облака тегов нужно добавить строку в любое место:</p>
+
+<figure class="highlight">
+  <pre><code class="language-html" data-lang="html">{% include archive.html %}</code></pre>
+</figure>
+
+<h2 id="отправить-в-github">Отправить в Github</h2>
+<p>Последним действием нужно отправить  изменения на GitHub.</p>
+
+</div>
+            <div class="container">
+    <ul class="list-group posts">
+        
+        
+    </ul>
+</div>
+        </main>
+
+        <footer>
+    <div class="container">
+        <div class="tags">
+            
+
+
+
+
+<a href="/tag/linux" target="_blank">
+    <nobr>linux</nobr>
+</a>
+
+
+
+<a href="/tag/centos-7" target="_blank">
+    <nobr>centos-7</nobr>
+</a>
+
+
+
+<a href="/tag/jekyll" target="_blank">
+    <nobr>jekyll</nobr>
+</a>
+
+
+
+<a href="/tag/github-pages" target="_blank">
+    <nobr>github-pages</nobr>
+</a>
+
+
+
+<a href="/tag/github" target="_blank">
+    <nobr>github</nobr>
+</a>
+
+
+
+<a href="/tag/blog" target="_blank">
+    <nobr>blog</nobr>
+</a>
+
+
+
+<a href="/tag/windows" target="_blank">
+    <nobr>windows</nobr>
+</a>
+
+
+
+<a href="/tag/vscode" target="_blank">
+    <nobr>vscode</nobr>
+</a>
+
+
+
+<a href="/tag/text-editors" target="_blank">
+    <nobr>text-editors</nobr>
+</a>
+
+
+
+<a href="/tag/macos" target="_blank">
+    <nobr>macos</nobr>
+</a>
+
+        </div>
+        <div class="links">
+            <div>
+                <h4>Социальные сети</h4>
+                <ul class="list-group socials">
+                    
+                    <li class="list-group-item">
+                        <a href="https://github.com/InFallen" target="_blank">
+                            <img src="/assets/img/icon-github.png" alt="icon GitHub">
+                        </a>
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <a href="https://vk.com/infallen" target="_blank">
+                            <img src="/assets/img/icon-vk.png" alt="icon VK">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4>Используемые ресурсы</h4>
+                <ul class="list-group resources">
+                    
+                    <li class="list-group-item">
+                        <a href="https://getbootstrap.com/" target="_blank">
+                            <img src="/assets/img/icon-bootstrap.png" alt="icon Bootstrap">
+                        </a> - инструменты для создания сайтов и веб-приложений.
+                    </li>
+                    
+                    <li class="list-group-item">
+                        <a href="https://icons8.ru/" target="_blank">
+                            <img src="/assets/img/icon-icons8.png" alt="icon Icons8">
+                        </a> - иконки на любой случай.
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            
+            <span>Copyright &copy; infallen.space 2022.
+                Все
+                права защищены</span>
+        </div>
+    </div>
+</footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script scr="/assets/js/scripts.js"></script>
+
+</body>
+
+</html>
