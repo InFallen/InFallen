@@ -50,9 +50,9 @@ tags: vscode text-editors windows macos linux
 #### Установка
 1.Вначале импортируем ключ Microsoft GPG:
 
-    {% highlight bash %}
-    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    {% endhighlight %}
+{% highlight bash %}
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+{% endhighlight %}
 
 2.Затем создаем файл **.repo**, чтобы включить репозиторий Visual Studio Code:
 
