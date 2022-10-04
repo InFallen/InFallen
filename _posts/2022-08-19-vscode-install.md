@@ -40,4 +40,50 @@ tags: vscode text-editors windows macos linux
 На этом установка Visual Studio Code на MacOS закончена.
 
 ## <a name="linux"></a>Установка на Linux
+
+1. [Установка в CentOS 7](#centos-7)
+
+### <a name="centos-7"></a>Установка в CentOS 7
+
+#### Требования
+Нужно, чтобы у пользователя под которым будет происходить установка были права **sudo**.
+#### Установка
+1.Вначале импортируем ключ Microsoft GPG:
+
+    {% highlight bash %}
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    {% endhighlight %}
+
+2.Затем создаем файл **.repo**, чтобы включить репозиторий Visual Studio Code:
+
+{% highlight bash %}
+sudo mcedit /etc/yum.repos.d/vscode.repo
+{% endhighlight %}
+
+И вставляем в него эти данные:
+
+{% highlight bash %}
+[code]
+name=Visual Studio Code
+baseurl=https://packages.microsoft.com/yumrepos/vscode
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+{% endhighlight %}
+
+
+Сохраняем и закрываем текстовый редактор.
+
+3.После включения репозитория, для установки Visual Studio Code требуется ввести команду:
+{% highlight bash %}
+sudo yum install code
+{% endhighlight %}
+
+Вот и все. Visual Studio Code установлен и вы можете его использовать.
+
+Обновить можно с помощью команды:
+{% highlight bash %}
+sudo yum update
+{% endhighlight %}
+
 ## <a name="windows"></a>Установка на Windows
